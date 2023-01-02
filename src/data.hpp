@@ -2,6 +2,7 @@
 #define DATA_HPP
 
 #include <cstddef>
+#include <cassert>
 #include <type_traits>
 #include <vector>
 #include <memory>
@@ -35,37 +36,47 @@ concept Test = requires(T test)
 	{test()} -> std::same_as<bool>;
 };
 
-template<class TestType, typename AlfaType>
-concept Significance = Ratio<AlfaType> && requires(TestType obj, AlfaType alfa)
-{
-	{obj.get_significance()} -> std::convertible_to<AlfaType>;
-	{obj.set_significance(alfa)} -> std::same_as<void>;
-};
+template<Ratio T>
+void significance_check(T alfa) {
+	assert(alfa == 0.01 || alfa == 0.02 || alfa == 0.05 || alfa == 0.1 );
+}
 
 template<Ratio T>
 class significance_component
 {
-	significance_component(T alfa) : alfa_(alfa) {}
-	void set_significance(T alfa) {
-		alfa_ = alfa;
-	}
-	T get_significance() {
-		return alfa_;
-	}
+	public:
+		significance_component(T alfa) : alfa_(alfa) {
+			significance_check<T>(alfa_);
+		}
+		void set_significance(T alfa) {
+			significance_check<T>(alfa_);
+			alfa_ = alfa;
+		}
+		T get_significance() {
+			return alfa_;
+		}
+		
 	protected:
 		T alfa_ = 0.05;
+};
+
+template<class TestType, typename AlfaType>
+concept Significance = Ratio<AlfaType> && requires(TestType test)
+{
+	std::is_base_of_v<significance_component<AlfaType>, decltype(test)>;
 };
 
 template<typename T>
 class data_container
 {
-	data_container(std::shared_ptr<T> data) : data_(data) {}
-	void set_data(std::shared_ptr<T> data) {
-		data_ = data;
-	}
-	T get_data() {
-		return data_;
-	}
+	public:
+		data_container(std::shared_ptr<T> data) : data_(data) {}
+		void set_data(std::shared_ptr<T> data) {
+			data_ = data;
+		}
+		T get_data() {
+			return data_;
+		}
 	protected:
 		std::shared_ptr<T> data_;
 };

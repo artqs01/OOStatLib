@@ -8,9 +8,6 @@
 namespace sl
 {
 
-// template<typename TestType, typename DataType, typename AlfaType = double>
-// concept SingleDataTest = Test<TestType> && Significance<TestType, AlfaType> && SingleDataContainer<TestType, DataType>;
-
 // template<typename TestType, typename DataType, typename AlfaType>
 // concept PairedDataTest = Test<TestType> && Significance<TestType, AlfaType> && PairedDataContainer<TestType, DataType>;
 
@@ -42,22 +39,6 @@ template<Interval DataType, Ratio ReturnType = double>
 ReturnType standard_deviation(const single_data<DataType>& data)
 {
 	return std::sqrt(variance(data));
-}
-
-template<Ratio DataType, Ratio AlfaType = double>
-class shapiro_wilk :
-	public data_container<single_data<DataType>>,
-	public significance_component<AlfaType>
-{
-	public:
-		bool operator()();
-	private:
-};
-
-template<Ratio DataType, Ratio AlfaType>
-bool shapiro_wilk<DataType, AlfaType>::operator()()
-{
-
 }
 
 }
