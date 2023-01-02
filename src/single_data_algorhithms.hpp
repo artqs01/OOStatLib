@@ -32,7 +32,7 @@ ReturnType variance(const single_data<DataType>& data)
 	for (const auto& value : data) {
 		sum += (value - average) * (value - average);
 	}
-	return sum / data.size();
+	return sum / (data.size() - 1);
 }
 
 template<Interval DataType, Ratio ReturnType = double>

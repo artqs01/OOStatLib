@@ -848,22 +848,20 @@ constexpr inline T get_p_value(size_t data_count, T significance)
 	assert(data_count >= 3);
 	assert(data_count <= 50);
 	significance_check<T>(significance);
-	size_t index;
-	switch (significance) {
-		case 0.01 :
-			index = 0;
-		break;
-		case 0.02 :
-			index = p_value_offset;
-		break;
-		case 0.05 :
-			index = p_value_offset * 2;
-		break;
-		case 0.1 :
-			index = p_value_offset * 3;
-		break;
+	size_t offset = 0;
+	if (significance == 0.01) {
+		offset = 0;
 	}
-	return SHAPIRO_WILK_P_VALUES<T>[index + data_count];
+	else if (significance == 0.02) {
+		offset = p_value_offset;
+	}
+	else if (significance == 0.05) {
+		offset = p_value_offset * 2;
+	}
+	else if (significance == 0.1) {
+		offset = p_value_offset * 3;
+	}
+	return SHAPIRO_WILK_P_VALUES<T>[offset + data_count];
 }
 
 }

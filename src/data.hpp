@@ -18,14 +18,7 @@ template<typename T>
 concept Ordinal = std::totally_ordered<T>;
 
 template<typename T>
-concept Interval = Ordinal<T> && requires(T a, T b)
-{
-	{a + b} -> std::same_as<T>;
-	{a - b} -> std::same_as<T>;
-
-	{a += b} -> std::same_as<T>;
-	{a -= b} -> std::same_as<T>;
-};
+concept Interval = Ordinal<T> && (std::is_integral_v<T> || std::is_floating_point_v<T>);
 
 template<typename T>
 concept Ratio = std::is_floating_point_v<T>;
@@ -74,7 +67,7 @@ class data_container
 		void set_data(std::shared_ptr<T> data) {
 			data_ = data;
 		}
-		T get_data() {
+		std::shared_ptr<T> get_data() {
 			return data_;
 		}
 	protected:
