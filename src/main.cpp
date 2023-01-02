@@ -1,8 +1,5 @@
-#include "data.hpp"
 #include "shapiro_wilk.hpp"
 #include <iostream>
-
-// #include "test.hpp"
 
 int main()
 {

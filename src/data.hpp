@@ -23,6 +23,9 @@ concept Interval = Ordinal<T> && (std::is_integral_v<T> || std::is_floating_poin
 template<typename T>
 concept Ratio = std::is_floating_point_v<T>;
 
+template<typename T>
+concept UnsignedIntegral = std::is_integral_v<T> && std::is_unsigned_v<T>;
+
 template<class T>
 concept Test = requires(T test)
 {
