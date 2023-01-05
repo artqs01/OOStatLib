@@ -4,11 +4,8 @@
 
 namespace sl {
 
-namespace sw
-{
-
 template<Ratio T = double>
-constexpr static inline T SHAPIRO_WILK_COEFFICIENTS[] = {
+constexpr static inline T SW_COEFFICIENTS[] = {
 	0.7071,
 	0.7071,
 	0.6872,
@@ -636,7 +633,7 @@ constexpr static inline T SHAPIRO_WILK_COEFFICIENTS[] = {
 };
 
 template<Ratio T = double>
-constexpr static inline T SHAPIRO_WILK_P_VALUES[] = {
+constexpr static inline T SW_P_VALUES[] = {
 	0.753,
 	0.687,
 	0.686,
@@ -830,7 +827,5 @@ constexpr static inline T SHAPIRO_WILK_P_VALUES[] = {
 	0.955,
 	0.955
 };
-
-}
 
 }

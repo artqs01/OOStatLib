@@ -9,11 +9,8 @@
 namespace sl 
 {
 
-namespace pdf
-{
-
 template<Ratio T = double>
-T chi_sqr(T value, size_t degrees_of_freedom)
+T pdf_chi_sqr(T value, size_t degrees_of_freedom)
 {
 	assert(!std::isnan(value));
 	assert(!std::isinf(value));
@@ -26,7 +23,7 @@ T chi_sqr(T value, size_t degrees_of_freedom)
 }
 
 template<Ratio T = double>
-T t(T value, size_t degrees_of_freedom)
+T pdf_t(T value, size_t degrees_of_freedom)
 {
 	assert(!std::isnan(value));
 	assert(!std::isinf(value));
@@ -34,8 +31,6 @@ T t(T value, size_t degrees_of_freedom)
 	T base = (1 + value * value / (T)degrees_of_freedom) /
 		(std::sqrt((T)degrees_of_freedom) * std::beta((T)0.5, (T)degrees_of_freedom * (T)0.5));
 	return std::pow(base, (T)-0.5 * (T)(degrees_of_freedom + 1));
-}
-
 }
 
 }
