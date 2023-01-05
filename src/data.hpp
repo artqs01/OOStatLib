@@ -18,7 +18,7 @@ template<typename T>
 concept Ordinal = std::totally_ordered<T>;
 
 template<typename T>
-concept Interval = Ordinal<T> && (std::is_integral_v<T> || std::is_floating_point_v<T>);
+concept Interval = std::is_integral_v<T> || std::is_floating_point_v<T>;
 
 template<typename T>
 concept Ratio = std::is_floating_point_v<T>;
@@ -32,28 +32,29 @@ concept Test = requires(T test)
 	{test()} -> std::same_as<bool>;
 };
 
-template<Ratio T>
-void significance_check(T alfa) {
-	assert(alfa == 0.01 || alfa == 0.02 || alfa == 0.05 || alfa == 0.1 );
-}
+enum class significance
+{
+	one_hundredth = 1,
+	two_hundredths = 2,
+	five_hundredths = 5,
+	one_tenth = 10
+};
 
-template<Ratio T>
+template<Ratio T = double>
 class significance_component
 {
 	public:
-		significance_component(T alfa) : alfa_(alfa) {
-			significance_check<T>(alfa_);
+		significance_component(significance alfa) : alfa_(alfa) {
 		}
-		void set_significance(T alfa) {
-			significance_check<T>(alfa_);
+		void set_significance(significance alfa) {
 			alfa_ = alfa;
 		}
 		T get_significance() {
-			return alfa_;
+			return (T)alfa_ / (T)0.01;
 		}
 		
 	protected:
-		T alfa_ = 0.05;
+		significance alfa_ = significance::five_hundredths;
 };
 
 template<class TestType, typename AlfaType>
@@ -78,7 +79,7 @@ class data_container
 };
 
 template<typename T>
-using single_data = typename std::vector<T>;
+using single_container = typename std::vector<T>;
 
 template<typename T>
 using paired_data = typename std::vector<std::pair<T, T>>;
@@ -89,7 +90,7 @@ using multi_sample_data = typename std::vector<std::vector<T>>;
 template<typename TestType, typename DataType>
 concept SingleDataContainer = requires(TestType test)
 {
-	std::is_base_of_v<data_container<single_data<DataType>>, decltype(test)>;
+	std::is_base_of_v<data_container<single_container<DataType>>, decltype(test)>;
 };
 
 template<typename TestType, typename DataType>
