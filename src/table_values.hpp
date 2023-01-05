@@ -632,7 +632,7 @@ constexpr static inline T SHAPIRO_WILK_COEFFICIENTS[] = {
 	0.0244,
 	0.0174,
 	0.0104,
-	0.0035,
+	0.0035
 };
 
 template<Ratio T = double>

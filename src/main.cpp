@@ -3,7 +3,7 @@
 
 int main()
 {
-	sl::single_data<double> data1 = {
+	sl::single_container<double> data1 = {
 		26.5,
 		27.5,
 		27.5,
@@ -20,8 +20,8 @@ int main()
 		25.9,
 		27.9
 	};
-	sl::sw::shapiro_wilk<double> sw1(std::make_shared<sl::single_data<double>>(data1), 0.05);
-	std::cout << sw1();
+	sl::sw::shapiro_wilk<double> sw1(std::make_shared<sl::single_container<double>>(data1), 0.05);
+	std::cout << sw1() << "\n\n";
 	// std::cout << sw1.get_significance() << "\n";
 	// std::cout << sl::sw::get_coefficient(20, 9);
 
