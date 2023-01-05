@@ -8,14 +8,8 @@
 namespace sl
 {
 
-// template<typename TestType, typename DataType, typename AlfaType>
-// concept PairedDataTest = Test<TestType> && Significance<TestType, AlfaType> && PairedDataContainer<TestType, DataType>;
-
-// template<typename TestType, typename DataType, typename AlfaType>
-// concept MultiSampleTest = Test<TestType> && Significance<TestType, AlfaType> && MultiSampleContainer<TestType, DataType>;
-
 template<Interval DataType, Ratio ReturnType = double>
-ReturnType mean(const single_data<DataType>& data)
+ReturnType mean(const single_container<DataType>& data)
 {
 	DataType sum = 0;
 	for (const auto& value : data) {
@@ -25,7 +19,7 @@ ReturnType mean(const single_data<DataType>& data)
 }
 
 template<Interval DataType, Ratio ReturnType = double>
-ReturnType variance(const single_data<DataType>& data)
+ReturnType variance(const single_container<DataType>& data)
 {
 	ReturnType average = mean(data);
 	ReturnType sum = 0;
@@ -36,10 +30,12 @@ ReturnType variance(const single_data<DataType>& data)
 }
 
 template<Interval DataType, Ratio ReturnType = double>
-ReturnType standard_deviation(const single_data<DataType>& data)
+ReturnType standard_deviation(const single_container<DataType>& data)
 {
 	return std::sqrt(variance(data));
 }
+
+
 
 }
 
