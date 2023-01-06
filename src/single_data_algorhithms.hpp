@@ -68,7 +68,7 @@ bool mean_significance_test<DataType, CalcType>::operator()()
 {
 	CalcType t = (alg_mean<DataType, CalcType>(*this->data_) - mean_) * std::sqrt(this->data_->size()) /
 		alg_standard_deviation<DataType, CalcType>(*this->data_);
-	return pdf_t(t, this->data_->size() - 1) > this->get_significance();
+	return pdf_t(std::abs(t), this->data_->size() - 1) > this->get_significance();
 }
 
 template<Interval DataType, Ratio CalcType = double>
@@ -100,7 +100,7 @@ template<Interval DataType, Ratio CalcType>
 bool variance_significance_test<DataType, CalcType>::operator()()
 {
 	CalcType chi = alg_variance<DataType, CalcType>(*this->data_) * (this->data_->size() - 1) / variance_;
-	return pdf_chi_sqr(chi, this->data_->size() - 1) > this->get_significance();
+	return pdf_chi_sqr(std::abs(chi), this->data_->size() - 1) > this->get_significance();
 }
 
 
@@ -111,7 +111,7 @@ constexpr static inline T sw_get_coefficient(size_t data_count, size_t index)
 }
 
 template<UnsignedIntegral T>
-void data_count_check(T data_count)
+void sw_data_count_check(T data_count)
 {
 	assert(data_count >= 3);
 	assert(data_count <= 50);
@@ -120,9 +120,9 @@ void data_count_check(T data_count)
 constexpr size_t p_value_offset = 47;
 
 template<Ratio T = double>
-constexpr static inline T get_p_value(size_t data_count, significance alfa)
+constexpr static inline T sw_get_p_value(size_t data_count, significance alfa)
 {
-	data_count_check(data_count);
+	sw_data_count_check(data_count);
 	size_t offset = 0;
 	switch (alfa) {
 		case significance::one_hundredth :
@@ -170,7 +170,6 @@ bool shapiro_wilk<DataType, CalcType>::operator()()
 	w /= (alg_variance(*this->data_) * (this->data_->size() - 1));
 	return w > get_p_value(this->data_->size(), this->alfa_);
 }
-
 
 }
 
