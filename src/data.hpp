@@ -50,7 +50,7 @@ class significance_component
 			alfa_ = alfa;
 		}
 		T get_significance() {
-			return (T)alfa_ / (T)0.01;
+			return (T)alfa_ * (T)0.01;
 		}
 		
 	protected:
