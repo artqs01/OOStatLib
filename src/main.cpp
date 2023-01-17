@@ -23,19 +23,22 @@ int main()
 		25.9,
 		27.9
 	};
-	auto data_ptr = std::make_shared<sl::single_container<double>>(data1);
+	auto data1_ptr = std::make_shared<sl::single_container<double>>(data1);
 	sl::shapiro_wilk<double> sw1(
-		data_ptr,
+		data1_ptr,
 		sl::significance::five_hundredths);
 	sl::mean_significance_test<double> mst(
-		data_ptr,
+		data1_ptr,
 		sl::significance::five_hundredths,
 		27.0);
 	sl::variance_significance_test<double> vst(
-		data_ptr,
+		data1_ptr,
 		sl::significance::five_hundredths,
 		27.0);
-	std::cout << "sw: " << sw1() << ", mst: " << mst() << ", vst: " << vst() << "\n\n";
+	
+	std::cout << "sw: " << sl::shapiro_wilk<double>::evaluate(*data1_ptr, sl::significance::five_hundredths) <<
+		", mst: " << mst() <<
+		", vst: " << vst() << "\n\n";
 	// std::cout << sw1.get_significance() << "\n";
 	// std::cout << sl::sw::get_coefficient(20, 9);
 	// std::cout << sl::pdf_t(1.87866958564078, 14) << "\n\n";
