@@ -12,8 +12,7 @@ class significance_logic
 {
 	public:
 		significance_logic(significance alfa) : alfa_(alfa) {}
-		template<Ratio T>
-		static constexpr inline T to_floating_point(significance alfa) {
+		static inline AlfaType to_floating_point(significance alfa) {
 			return (AlfaType)alfa * (AlfaType)0.01;
 		}
 		void set_significance(significance alfa) {
