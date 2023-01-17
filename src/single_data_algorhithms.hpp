@@ -24,6 +24,10 @@ class mean :
 				"No implementation of algothithm."
 			);
 			static_assert(
+				Algorhithm<mean<DataType, CalcType>, CalcType>,
+				"No implementation of algothithm."
+			);
+			static_assert(
 				SingleContainerLogic<mean<DataType, CalcType>, DataType>,
 				"Wrong data for mean algorhithm."
 			);
@@ -51,6 +55,10 @@ class variance :
 		variance(std::shared_ptr<single_container<DataType>> data) : data_logic<DataType>(data) {
 			static_assert(
 				Funktor<variance<DataType, CalcType>>,
+				"No implementation of algothithm."
+			);
+			static_assert(
+				Algorhithm<variance<DataType, CalcType>, CalcType>,
 				"No implementation of algothithm."
 			);
 			static_assert(
@@ -82,6 +90,10 @@ class standard_deviation :
 		standard_deviation(std::shared_ptr<single_container<DataType>> data) : data_logic<DataType>(data) {
 			static_assert(
 				Funktor<standard_deviation<DataType, CalcType>>,
+				"No implementation of algothithm."
+			);
+			static_assert(
+				Algorhithm<standard_deviation<DataType, CalcType>, CalcType>,
 				"No implementation of algothithm."
 			);
 			static_assert(
@@ -117,6 +129,10 @@ class shapiro_wilk :
 			static_assert(
 				Significance<shapiro_wilk<DataType, CalcType>, DataType>,
 				"No setters or no getters for significance."
+			);
+			static_assert(
+				Algorhithm<shapiro_wilk<DataType, CalcType>, bool>,
+				"No implementation of algothithm."
 			);
 			static_assert(
 				SingleContainerLogic<shapiro_wilk<DataType, CalcType>, DataType>,
@@ -211,6 +227,10 @@ class mean_significance_test :
 				SingleContainerLogic<mean_significance_test<DataType, CalcType>, DataType>,
 				"Wrong data for mean significance test."
 			);
+			static_assert(
+				Algorhithm<shapiro_wilk<DataType, CalcType>, bool>,
+				"No implementation of algothithm."
+			);
 		}
 		void set_mean(CalcType mean) { mean_ = mean; }
 		CalcType get_mean() { return mean_; }
@@ -230,8 +250,8 @@ bool mean_significance_test<DataType, CalcType>::evaluate(
 	assert(if_normal);
 	CalcType t = (mean<DataType, CalcType>::evaluate(data) - _mean) * std::sqrt(data.size()) /
 		standard_deviation<DataType, CalcType>::evaluate(data);
-	return pdf_t(std::abs(t), data.size() - 1) >
-		significance_logic<CalcType>::template to_floating_point<CalcType>(alfa);
+	return pdf<CalcType>::t(std::abs(t), data.size() - 1) >
+		significance_logic<CalcType>::to_floating_point(alfa);
 }
 
 template<Interval DataType, Ratio CalcType>
@@ -268,6 +288,10 @@ class variance_significance_test :
 				SingleContainerLogic<variance_significance_test<DataType, CalcType>, DataType>,
 				"Wrong data for Variance Significance test."
 			);
+			static_assert(
+				Algorhithm<shapiro_wilk<DataType, CalcType>, bool>,
+				"No implementation of algothithm."
+			);
 		}
 		void set_variance(CalcType variance) { variance_ = variance; }
 		CalcType get_variance() { return variance_; }
@@ -286,8 +310,8 @@ bool variance_significance_test<DataType, CalcType>::evaluate(
 	bool if_normal = shapiro_wilk<DataType, CalcType>::evaluate(data, alfa);
 	assert(if_normal);
 	CalcType chi = variance<DataType, CalcType>::evaluate(data) * (data.size() - 1) / _variance;
-	return pdf_chi_sqr(std::abs(chi), data.size() - 1) >
-		significance_logic<CalcType>::template to_floating_point<CalcType>(alfa);
+	return pdf<CalcType>::chi_sqr(std::abs(chi), data.size() - 1) >
+		significance_logic<CalcType>::to_floating_point(alfa);
 }
 
 template<Interval DataType, Ratio CalcType>
