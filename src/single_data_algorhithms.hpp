@@ -321,39 +321,6 @@ bool variance_significance_test<DataType, CalcType>::operator()()
 	return this->last_result_;
 }
 
-// template<Interval DataType, Ratio CalcType = double>
-// class pair_observations_test :
-// 	public data_logic<paired_container<DataType>>,
-// 	public significance_logic<CalcType>
-// {
-// 	public:
-// 		pair_observations_test(
-// 			std::shared_ptr<single_container<DataType>> data,
-// 			significance alfa,
-// 			CalcType mean) :
-// 			data_logic<single_container<DataType>>(data),
-// 			significance_logic<CalcType>(alfa),
-// 			mean_(mean)
-// 		{
-// 			static_assert(Funktor<decltype(*this)>, "No implementation of algothithm.");
-// 			static_assert(Significance<decltype(*this), CalcType>, "No setters or no getters for significance.");
-// 			// static_assert(PairedContainerLogic<decltype(*this), DataType>, "Wrong data for Mean Significance test.");
-// 		}
-// 		void set_mean(CalcType mean) { mean_ = mean; }
-// 		CalcType get_mean() { return mean_; }
-// 		bool operator()();
-// 	private:
-// 		CalcType mean_;
-// };
-
-// template<Interval DataType, Ratio CalcType>
-// bool pair_observations_test<DataType, CalcType>::operator()()
-// {
-// 	assert(shapiro_wilk<DataType, CalcType>::evaluate(*this->data, *this->significance));
-// 	CalcType t = 0.0;
-// 	return pdf_t(std::abs(t), this->data_->size() - 1) > this->get_significance();
-// }
-
 }
 
 
