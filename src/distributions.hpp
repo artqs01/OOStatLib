@@ -13,8 +13,8 @@ template<Ratio CalcType = double>
 class pdf
 {
 	public :
-		static inline CalcType chi_sqr(CalcType value, size_t degrees_of_freedom);
-		static inline CalcType t(CalcType value, size_t degrees_of_freedom);
+		static CalcType chi_sqr(CalcType value, size_t degrees_of_freedom);
+		static CalcType t(CalcType value, size_t degrees_of_freedom);
 		
 };
 

@@ -18,7 +18,7 @@ class significance_logic
 		void set_significance(significance alfa) {
 			alfa_ = alfa;
 		}
-		AlfaType get_significance() {
+		AlfaType get_significance() const {
 			return to_floating_point<AlfaType>(alfa_);
 		}
 	protected:
@@ -39,7 +39,7 @@ class data_logic
 		void set_data(std::shared_ptr<DataType> data) {
 			data_ = data;
 		}
-		std::shared_ptr<DataType> get_data() {
+		std::shared_ptr<DataType> get_data() const {
 			return data_;
 		}
 	protected:
@@ -74,7 +74,7 @@ template<typename ResultType>
 class algorhithm
 {
 	public:
-		ResultType get_last_result() { return last_result_; }
+		ResultType get_last_result() const { return last_result_; }
 	protected:
 		ResultType last_result_;
 };

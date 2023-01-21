@@ -166,7 +166,7 @@ class shapiro_wilk :
 template<Interval DataType, Ratio CalcType>
 constexpr inline CalcType shapiro_wilk<DataType, CalcType>::sw_get_coefficient(size_t data_count, size_t index)
 {
-	return SW_COEFFICIENTS<CalcType>[((data_count - 1) * (data_count - 1) / 4) + index];
+	return shapiro_wilk_constants<CalcType>::COEFFICIENTS[((data_count - 1) * (data_count - 1) / 4) + index];
 }
 
 template<Interval DataType, Ratio CalcType>
@@ -186,7 +186,7 @@ constexpr inline CalcType shapiro_wilk<DataType, CalcType>::sw_get_p_value(size_
 			offset = p_value_offset * 3;
 		break;
 	}
-	return SW_P_VALUES<CalcType>[offset + data_count];
+	return shapiro_wilk_constants<CalcType>::P_VALUES[offset + data_count];
 }
 
 template<Interval DataType, Ratio CalcType>
