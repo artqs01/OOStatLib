@@ -34,8 +34,8 @@ enum class significance
 template<typename T>
 using single_container = typename std::vector<T>;
 
-template<typename T>
-using paired_container = typename std::vector<std::pair<T, T>>;
+template<typename T1, typename T2>
+using paired_container = typename std::vector<std::pair<T1, T2>>;
 
 template<typename T>
 using multi_sample_data = typename std::vector<std::vector<T>>;

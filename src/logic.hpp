@@ -54,12 +54,12 @@ concept SingleContainerLogic =
 	std::is_base_of_v<data_logic<single_container<DataType>>, decltype(c)>;
 };
 
-template<typename ClassType, typename DataType>
+template<typename ClassType, typename DataType1, typename DataType2>
 concept PairedContainerLogic =
 	std::is_function_v<decltype(ClassType::evaluate)> &&
-	requires(ClassType c, paired_container<DataType> data)
+	requires(ClassType c, paired_container<DataType1, DataType2> data)
 {
-	std::is_base_of_v<data_logic<paired_container<DataType>>, decltype(c)>;
+	std::is_base_of_v<data_logic<paired_container<DataType1, DataType2>>, decltype(c)>;
 };
 
 template<typename ClassType, typename DataType>
