@@ -54,10 +54,15 @@ class pair_observations_test :
 template<Interval DataType1, Interval DataType2, Ratio CalcType>
 bool pair_observations_test<DataType1, DataType2, CalcType>::evaluate(paired_container<DataType1, DataType2> &data, significance alfa)
 {
-	using DifferenceType = std::conditional_t<
-		std::is_floating_point_v<DataType1> && std::is_floating_point_v<DataType2>,
-		std::conditional_t<sizeof(DataType1) >= sizeof(DataType2), DataType1, DataType2>,
-		std::conditional_t<std::is_floating_point_v<DataType1>, DataType1,DataType2>
+	using DifferenceType = std::conditional_t<std::is_floating_point_v<DataType1> && std::is_floating_point_v<DataType2>,
+		std::conditional_t<sizeof(DataType1) >= sizeof(DataType2),
+			DataType1,
+			DataType2
+		>,
+		std::conditional_t<std::is_floating_point_v<DataType1>,
+			DataType1,
+			DataType2
+		>
 	>;	
 	std::vector<DifferenceType> difference(data.size());
 	for (const auto& pair : data) {
