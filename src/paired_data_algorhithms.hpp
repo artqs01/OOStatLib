@@ -5,66 +5,67 @@
 #include "logic.hpp"
 #include "single_data_algorhithms.hpp"
 #include <cassert>
+#include <cmath>
+#include <vector>
 
 namespace sl 
 {
 
-template<Interval DataType, Ratio CalcType = double>
+template<Interval DataType1, Interval DataType2, Ratio CalcType = double>
 class pair_observations_test :
-	public data_logic<paired_container<DataType>>,
+	public data_logic<paired_container<DataType1, DataType2>>,
 	public significance_logic<CalcType>,
 	public algorhithm<bool>
 {
 	public:
 		pair_observations_test(
-			std::shared_ptr<single_container<DataType>> data,
-			significance alfa,
-			CalcType mean
+			std::shared_ptr<paired_container<DataType1, DataType2>> data,
+			significance alfa
 		) :
-			data_logic<single_container<DataType>>(data),
+			data_logic<paired_container<DataType1, DataType2>>(data),
 			significance_logic<CalcType>(alfa),
-			mean_(mean)
+			algorhithm<bool>()
 		{
 			static_assert(
-				Funktor<pair_observations_test<DataType, CalcType>>,
+				Funktor<pair_observations_test<DataType1, DataType2, CalcType>>,
 				"No implementation of algothithm."
 			);
 			static_assert(
-				Significance<pair_observations_test<DataType, CalcType>, CalcType>,
+				Significance<pair_observations_test<DataType1, DataType2, CalcType>, CalcType>,
 				"No setters or no getters for significance."
 			);
 			
 			static_assert(
-				PairedContainerLogic<pair_observations_test<DataType, CalcType>, DataType>,
+				PairedContainerLogic<pair_observations_test<DataType1, DataType2, CalcType>, DataType1, DataType2>,
 				"Wrong data for pair observations test."
 			);
 			static_assert(
-				Algorhithm<pair_observations_test<DataType, CalcType>, bool>,
+				Algorhithm<pair_observations_test<DataType1, DataType2, CalcType>, bool>,
 				"No implementation of algothithm."
 			);
 		}
-		void set_mean(CalcType mean) { mean_ = mean; }
-		CalcType get_mean() { return mean_; }
 		bool operator()();
-		static bool evaluate(paired_container<DataType>& data, CalcType _variance, significance alfa);
-	private:
-		CalcType mean_;
+		static bool evaluate(paired_container<DataType1, DataType2>& data, significance alfa);
 };
 
 
 // TODO: implement evaluate() for pair observations test
-template<Interval DataType, Ratio CalcType>
-bool pair_observations_test<DataType, CalcType>::evaluate(paired_container<DataType> &data, CalcType _variance, significance alfa)
+template<Interval DataType1, Interval DataType2, Ratio CalcType>
+bool pair_observations_test<DataType1, DataType2, CalcType>::evaluate(paired_container<DataType1, DataType2> &data, significance alfa)
 {
-
-	CalcType t = 0.0;
-	return pdf_t(std::abs(t), data.size() - 1) > significance_logic<CalcType>::to_floating_point(alfa);
+	std::vector<CalcType> difference(data.size());
+	for (const auto& pair : data) {
+		difference.push_back(pair.second - pair.first);
+	}
+	CalcType t = mean<CalcType, CalcType>::evaluate(difference) * std::sqrt(difference.size()) /
+		standard_deviation<CalcType, CalcType>::evaluate(difference);
+	return pdf<CalcType>::t(std::abs(t), data.size() - 1) < significance_logic<CalcType>::to_floating_point(alfa);
 }
 
-template<Interval DataType, Ratio CalcType>
-bool pair_observations_test<DataType, CalcType>::operator()()
+template<Interval DataType1, Interval DataType2, Ratio CalcType>
+bool pair_observations_test<DataType1, DataType2, CalcType>::operator()()
 {
-	this->last_result_ = evaluate(*this->data_, mean_, this->alfa_);
+	this->last_result_ = evaluate(*this->data_, this->alfa_);
 	return this->last_result_;
 }
 
