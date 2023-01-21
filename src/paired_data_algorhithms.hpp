@@ -6,6 +6,7 @@
 #include "single_data_algorhithms.hpp"
 #include <cassert>
 #include <cmath>
+#include <type_traits>
 #include <vector>
 
 namespace sl 
@@ -53,12 +54,17 @@ class pair_observations_test :
 template<Interval DataType1, Interval DataType2, Ratio CalcType>
 bool pair_observations_test<DataType1, DataType2, CalcType>::evaluate(paired_container<DataType1, DataType2> &data, significance alfa)
 {
-	std::vector<CalcType> difference(data.size());
+	using DifferenceType = std::conditional_t<
+		std::is_floating_point_v<DataType1> && std::is_floating_point_v<DataType2>,
+		std::conditional_t<sizeof(DataType1) >= sizeof(DataType2), DataType1, DataType2>,
+		std::conditional_t<std::is_floating_point_v<DataType1>, DataType1,DataType2>
+	>;	
+	std::vector<DifferenceType> difference(data.size());
 	for (const auto& pair : data) {
 		difference.push_back(pair.second - pair.first);
 	}
-	CalcType t = mean<CalcType, CalcType>::evaluate(difference) * std::sqrt(difference.size()) /
-		standard_deviation<CalcType, CalcType>::evaluate(difference);
+	CalcType t = mean<DifferenceType, CalcType>::evaluate(difference) * std::sqrt(difference.size()) /
+		standard_deviation<DifferenceType, CalcType>::evaluate(difference);
 	return pdf<CalcType>::t(std::abs(t), data.size() - 1) < significance_logic<CalcType>::to_floating_point(alfa);
 }
 
