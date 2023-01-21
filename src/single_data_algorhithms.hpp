@@ -18,7 +18,10 @@ class mean :
 	public algorhithm<CalcType>
 {
 	public:
-		mean(std::shared_ptr<single_container<DataType>> data) : data_logic<DataType>(data) {
+		mean(std::shared_ptr<single_container<DataType>> data) :
+			data_logic<DataType>(data),
+			algorhithm<CalcType>()
+		{
 			static_assert(
 				Funktor<mean<DataType, CalcType>>,
 				"No implementation of algothithm."
@@ -52,7 +55,10 @@ class variance :
 	public algorhithm<CalcType>
 {
 	public:
-		variance(std::shared_ptr<single_container<DataType>> data) : data_logic<DataType>(data) {
+		variance(std::shared_ptr<single_container<DataType>> data) : 
+			data_logic<DataType>(data),
+			algorhithm<CalcType>()
+		{
 			static_assert(
 				Funktor<variance<DataType, CalcType>>,
 				"No implementation of algothithm."
@@ -87,7 +93,10 @@ class standard_deviation :
 	public algorhithm<CalcType>
 {
 	public:
-		standard_deviation(std::shared_ptr<single_container<DataType>> data) : data_logic<DataType>(data) {
+		standard_deviation(std::shared_ptr<single_container<DataType>> data) :
+			data_logic<DataType>(data),
+			algorhithm<CalcType>() 
+		{
 			static_assert(
 				Funktor<standard_deviation<DataType, CalcType>>,
 				"No implementation of algothithm."
@@ -120,7 +129,8 @@ class shapiro_wilk :
 	public:
 		shapiro_wilk(std::shared_ptr<single_container<DataType>> data, significance alfa) :
 			data_logic<single_container<DataType>>(data),
-			significance_logic<CalcType>(alfa)
+			significance_logic<CalcType>(alfa),
+			algorhithm<bool>()
 		{
 			static_assert(
 				Funktor<shapiro_wilk<DataType, CalcType>>,
@@ -213,6 +223,7 @@ class mean_significance_test :
 			CalcType mean) :
 			data_logic<single_container<DataType>>(data),
 			significance_logic<CalcType>(alfa),
+			algorhithm<bool>(),
 			mean_(mean)
 		{
 			static_assert(
@@ -274,6 +285,7 @@ class variance_significance_test :
 			CalcType variance) :
 			data_logic<single_container<DataType>>(data),
 			significance_logic<CalcType>(alfa),
+			algorhithm<bool>(),
 			variance_(variance)
 		{
 			static_assert(
