@@ -17,7 +17,12 @@
 
 namespace sl {
 
-//! Klasa implementująca logikę związaną z poziomem istotności testu statystycznego.
+/**
+	\brief Klasa implementująca logikę związaną z poziomem istotności testu statystycznego.
+
+	Argumenty szablonowe:
+	- _AlfaType_: typ, który będzie wykorzystywany do konwersji z typu sl::significance.
+*/
 template<Ratio AlfaType = double>
 class significance_logic
 {
@@ -53,7 +58,12 @@ concept Significance = Ratio<AlfaType> && requires(TestType test)
 	std::is_base_of_v<significance_logic<AlfaType>, decltype(test)>;
 };
 
-//! Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych.
+/**
+	\brief Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych.
+	
+	Argumenty szablonowe:
+	- _CollectionType_: typ kolekcji danych, które będą przetwarzane przez algorytm.
+*/
 template<typename CollectionType>
 class data_logic
 {
@@ -105,7 +115,12 @@ concept MultiSampleContainerLogic =
 	std::is_base_of_v<data_logic<multi_sample_container<DataType>>, decltype(c)>;
 };
 
-//! Klasa implementująca logikę pomocniczą dla algorytmów.
+/**
+	\brief Klasa implementująca logikę pomocniczą dla algorytmów.
+	
+	Argumenty szablonowe:
+	- _ResultType_: typ zwracany przez algorytm.
+*/
 template<typename ResultType>
 class algorhithm
 {
@@ -116,7 +131,7 @@ class algorhithm
 
 	protected:
 
-		//! Getter ostatnio obliczonej wartości przez algorytm.
+		//! Ostatnia wartość obliczona przez algorytm.
 		ResultType last_result_;
 };
 
