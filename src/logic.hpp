@@ -5,6 +5,13 @@
 #include <memory>
 #include <type_traits>
 
+/**
+	\file distributions.hpp
+	\brief Plik definiujący klasy definiujące logikę wspólną dla klas testów statystycznych:
+	 
+	\author Artur Kuś
+*/
+
 namespace sl {
 
 template<Ratio AlfaType = double>
