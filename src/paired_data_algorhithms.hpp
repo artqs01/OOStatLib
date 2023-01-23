@@ -34,6 +34,15 @@ class pair_observations_test :
 	public algorhithm<bool>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane oraz poziomem istotności.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::Significance,
+			- sl::PairedContainerLogic,
+			- sl::Algorhithm.
+		*/
 		pair_observations_test(
 			std::shared_ptr<paired_container<DataType1, DataType2>> data,
 			significance alfa
@@ -60,7 +69,11 @@ class pair_observations_test :
 				"No implementation of algothithm."
 			);
 		}
+
+
 		bool operator()();
+
+		
 		static bool evaluate(paired_container<DataType1, DataType2>& data, significance alfa);
 };
 
