@@ -26,7 +26,7 @@ class mean :
 				"No implementation of algothithm."
 			);
 			static_assert(
-				Algorhithm<mean<DataType, CalcType>, CalcType>,
+				Algorithm<mean<DataType, CalcType>, CalcType>,
 				"No implementation of algothithm."
 			);
 			static_assert(
@@ -63,7 +63,7 @@ class variance :
 				"No implementation of algothithm."
 			);
 			static_assert(
-				Algorhithm<variance<DataType, CalcType>, CalcType>,
+				Algorithm<variance<DataType, CalcType>, CalcType>,
 				"No implementation of algothithm."
 			);
 			static_assert(
@@ -101,7 +101,7 @@ class standard_deviation :
 				"No implementation of algothithm."
 			);
 			static_assert(
-				Algorhithm<standard_deviation<DataType, CalcType>, CalcType>,
+				Algorithm<standard_deviation<DataType, CalcType>, CalcType>,
 				"No implementation of algothithm."
 			);
 			static_assert(
@@ -140,7 +140,7 @@ class shapiro_wilk :
 				"No setters or no getters for significance."
 			);
 			static_assert(
-				Algorhithm<shapiro_wilk<DataType, CalcType>, bool>,
+				Algorithm<shapiro_wilk<DataType, CalcType>, bool>,
 				"No implementation of algothithm."
 			);
 			static_assert(
@@ -1057,7 +1057,7 @@ class mean_significance_test :
 				"Wrong data for mean significance test."
 			);
 			static_assert(
-				Algorhithm<shapiro_wilk<DataType, CalcType>, bool>,
+				Algorithm<shapiro_wilk<DataType, CalcType>, bool>,
 				"No implementation of algothithm."
 			);
 		}
@@ -1119,7 +1119,7 @@ class variance_significance_test :
 				"Wrong data for Variance Significance test."
 			);
 			static_assert(
-				Algorhithm<shapiro_wilk<DataType, CalcType>, bool>,
+				Algorithm<shapiro_wilk<DataType, CalcType>, bool>,
 				"No implementation of algothithm."
 			);
 		}

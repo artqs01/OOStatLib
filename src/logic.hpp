@@ -137,7 +137,7 @@ class algorhithm
 
 //! Koncept definiujący sprawdzający, czy test jest algorytmem.
 template<typename AlgorhithmType, typename ResultType>
-concept Algorhithm = requires(AlgorhithmType alg)
+concept Algorithm = requires(AlgorhithmType alg)
 {
 	std::is_base_of_v<algorhithm<ResultType>, decltype(alg)>;
 };

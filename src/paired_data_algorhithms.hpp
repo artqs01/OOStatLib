@@ -65,7 +65,7 @@ class pair_observations_test :
 				"Wrong data for pair observations test."
 			);
 			static_assert(
-				Algorhithm<pair_observations_test<DataType1, DataType2, CalcType>, bool>,
+				Algorithm<pair_observations_test<DataType1, DataType2, CalcType>, bool>,
 				"No implementation of algothithm."
 			);
 		}
@@ -73,7 +73,7 @@ class pair_observations_test :
 
 		bool operator()();
 
-		
+
 		static bool evaluate(paired_container<DataType1, DataType2>& data, significance alfa);
 };
 
