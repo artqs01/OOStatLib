@@ -7,7 +7,8 @@
 
 /**
 	\file data.hpp
-	\brief Plik zawierający definicje konceptów odpowiedzialnych za dane przetwarzane przez bibliotekę 
+	\brief Plik zawierający definicje konceptów odpowiedzialnych za dane przetwarzane przez bibliotekę
+
 	oraz enum sl::significance przechowujące dostępne wartości poziomów istotności dla wszystkich testów statystycznych.
 	\author Artur Kuś
 */
@@ -65,7 +66,7 @@ using paired_container = typename std::vector<std::pair<T1, T2>>;
 
 //! Using dla kontenera łączącego różne zestawy danych o różnych rozmiarach.
 template<typename T>
-using multi_sample_data = typename std::vector<std::vector<T>>;
+using multi_sample_container = typename std::vector<std::vector<T>>;
 
 }
 

@@ -16,8 +16,9 @@
 */
 namespace sl 
 {
+
 /**
-	\brief Klasa zawierającej w sobie wszystkie potrzebne dystrybuanty
+	\brief Klasa zawierająca w sobie wszystkie potrzebne dystrybuanty
 	i funkcje gęstości prawdopodobieństwa oraz implementacje tychże funkcji:
 */
 template<Ratio CalcType = double>
@@ -25,20 +26,22 @@ class pdf
 {
 	public :
 		/**
-		\brief Funkcja zwracająca rozkład \f$χ^2\f$.
-		Argumenty:
-		- wartość zmiennej losowej _value_,
-		- liczba stopni swobody _degrees_of_freedom_.
-		\note Dla wartości _nan_ oraz _inf_ program jest przerywany przez asercję
+			\brief Funkcja zwracająca rozkład \f$χ^2\f$.
+			
+			Argumenty:
+			- wartość zmiennej losowej _value_,
+			- liczba stopni swobody _degrees_of_freedom_.
+			\note Dla wartości _nan_ oraz _inf_ program jest przerywany przez asercję
 		*/
 		static CalcType chi_sqr(CalcType value, size_t degrees_of_freedom);
 
 		/**
-		\brief Funkcja zwracająca rozkład \f$T\f$ studenta.
-		Argumenty:
-		- wartość zmiennej losowej _value_,
-		- liczba stopni swobody _degrees_of_freedom_.
-		\note Dla wartości _nan_ oraz _inf_ program jest przerywany przez asercję
+			\brief Funkcja zwracająca rozkład \f$T\f$ studenta.
+			
+			Argumenty:
+			- wartość zmiennej losowej _value_,
+			- liczba stopni swobody _degrees_of_freedom_.
+			\note Dla wartości _nan_ oraz _inf_ program jest przerywany przez asercję
 		*/
 		static CalcType t(CalcType value, size_t degrees_of_freedom);
 		
