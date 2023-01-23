@@ -9,9 +9,24 @@
 #include <type_traits>
 #include <vector>
 
+/**
+	\file paired_data_algorhithms.hpp
+	\brief Plik z klasami implementującymi testy statystyczne, przetwarzające kolekcję par danych sl::paired_container:
+	- sl::pair_observations_test implementujące test dla par obserwacji.
+	\author Artur Kuś
+*/
+
 namespace sl 
 {
 
+/**
+	\brief Klasa implementująca test dla par obserwacji.
+
+	Argumenty szablonowe:
+	- _DataType1_: typ pierwszej danej z pary,
+	- _DataType2_: typ drugiej danej z pary,
+	- _CalcType_: typ zmiennoprzecinkowy, na którym wykonywane są obliczenia.
+*/
 template<Interval DataType1, Interval DataType2, Ratio CalcType = double>
 class pair_observations_test :
 	public data_logic<paired_container<DataType1, DataType2>>,
@@ -49,8 +64,6 @@ class pair_observations_test :
 		static bool evaluate(paired_container<DataType1, DataType2>& data, significance alfa);
 };
 
-
-// TODO: implement evaluate() for pair observations test
 template<Interval DataType1, Interval DataType2, Ratio CalcType>
 bool pair_observations_test<DataType1, DataType2, CalcType>::evaluate(paired_container<DataType1, DataType2> &data, significance alfa)
 {
