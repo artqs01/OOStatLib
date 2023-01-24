@@ -26,6 +26,8 @@ namespace sl
 	- _DataType1_: typ pierwszej danej z pary,
 	- _DataType2_: typ drugiej danej z pary,
 	- _CalcType_: typ zmiennoprzecinkowy, na którym wykonywane są obliczenia.
+
+	Test zwraca _true_, jeżeli dane są istotnie statystycznie równe sobie (prawdziwe jest \f$H_0\f$), _false_, jeżeli są różne (należy odrzucić \f$H_0\f$).
 */
 template<Interval DataType1, Interval DataType2, Ratio CalcType = double>
 class pair_observations_test :

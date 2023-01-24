@@ -20,12 +20,27 @@
 namespace sl
 {
 
+/**
+	\brief Klasa implementująca algorytm średniej.
+
+	Argumenty szablonowe:
+	- _DataType_: typ danych, z których liczona jest średnia,
+	- _CalcType_: typ zmiennoprzecinkowy, którego jest wynik i na którym wykonywane są obliczenia.
+*/
 template<Interval DataType, Ratio CalcType = double>
 class mean :
 	public data_logic<single_container<DataType>>,
 	public algorhithm<CalcType>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::SingleContainerLogic,
+			- sl::Algorithm.
+		*/
 		mean(std::shared_ptr<single_container<DataType>> data) :
 			data_logic<DataType>(data),
 			algorhithm<CalcType>()
@@ -43,7 +58,15 @@ class mean :
 				"Wrong data for mean algorhithm."
 			);
 		}
+
+		//! Funkcja statyczna ywołująca algorytm dla podanych argumentów.
 		static CalcType evaluate(const single_container<DataType>& data);
+
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
+
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		CalcType operator()();
 };
 
@@ -57,12 +80,34 @@ CalcType mean<DataType, CalcType>::evaluate(const single_container<DataType>& da
 	return (CalcType)sum / (CalcType)data.size();
 }
 
+template<Interval DataType, Ratio CalcType>
+CalcType mean<DataType, CalcType>::operator()()
+{
+	this->last_result_ = evaluate(*this->data_);
+	return this->last_result_;
+}
+
+/**
+	\brief Klasa implementująca algorytm wariancji.
+
+	Argumenty szablonowe:
+	- _DataType_: typ danych, z których liczony jest algorytm,
+	- _CalcType_: typ zmiennoprzecinkowy, którego jest wynik i na którym wykonywane są obliczenia.
+*/
 template<Interval DataType, Ratio CalcType = double>
 class variance :
 	public data_logic<single_container<DataType>>,
 	public algorhithm<CalcType>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::SingleContainerLogic,
+			- sl::Algorithm.
+		*/
 		variance(std::shared_ptr<single_container<DataType>> data) : 
 			data_logic<DataType>(data),
 			algorhithm<CalcType>()
@@ -80,7 +125,14 @@ class variance :
 				"Wrong data for mean algorhithm."
 			);
 		}
+		//! Funkcja statyczna wywołująca algorytm dla podanych danych.
 		static CalcType evaluate(const single_container<DataType>& data);
+
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
+
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		CalcType operator()();
 };
 
@@ -95,12 +147,34 @@ CalcType variance<DataType, CalcType>::evaluate(const single_container<DataType>
 	return sum / (data.size() - 1);
 }
 
+template<Interval DataType, Ratio CalcType>
+CalcType variance<DataType, CalcType>::operator()()
+{
+	this->last_result_ = evaluate(*this->data_);
+	return this->last_result_;
+}
+
+/**
+	\brief Klasa implementująca algorytm odchylenia standardowego.
+
+	Argumenty szablonowe:
+	- _DataType_: typ danych, z których liczony jest algorytm,
+	- _CalcType_: typ zmiennoprzecinkowy, którego jest wynik i na którym wykonywane są obliczenia.
+*/
 template<Interval DataType, Ratio CalcType = double>
 class standard_deviation :
 	public data_logic<single_container<DataType>>,
 	public algorhithm<CalcType>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::SingleContainerLogic,
+			- sl::Algorithm.
+		*/
 		standard_deviation(std::shared_ptr<single_container<DataType>> data) :
 			data_logic<DataType>(data),
 			algorhithm<CalcType>() 
@@ -118,7 +192,15 @@ class standard_deviation :
 				"Wrong data for mean algorhithm."
 			);
 		}
+
+		//! Funkcja statyczna wywołująca algorytm dla podanych danych.
 		static CalcType evaluate(const single_container<DataType>& data);
+
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
+
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		CalcType operator()();
 };
 
@@ -128,6 +210,22 @@ CalcType standard_deviation<DataType, CalcType>::evaluate(const single_container
 	return std::sqrt(variance<DataType, CalcType>::evaluate(data));
 }
 
+template<Interval DataType, Ratio CalcType>
+CalcType standard_deviation<DataType, CalcType>::operator()()
+{
+	this->last_result_ = evaluate(*this->data_);
+	return this->last_result_;
+}
+
+/**
+	\brief Klasa implementująca test Shapiro-Wilka.
+
+	Argumenty szablonowe:
+	- _DataType_ typu sl::Interval: typ danych, z których liczony jest test,
+	- _CalcType_ typu typu sl::Ratio: typ zmiennoprzecinkowy, którego jest wynik i na którym wykonywane są obliczenia.
+
+	Test zwraca _true_, jeżeli dane są rozkładu normalnego (prawdziwe jest \f$H_0\f$), _false_, jeżeli nie są (należy odrzucić \f$H_0\f$).
+*/
 template<Interval DataType, Ratio CalcType = double>
 class shapiro_wilk :
 	public data_logic<single_container<DataType>>,
@@ -135,6 +233,15 @@ class shapiro_wilk :
 	public algorhithm<bool>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane oraz poziomem istotności typu sl:significance.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::Significance,
+			- sl::SingleContainerLogic,
+			- sl::Algorithm.
+		*/
 		shapiro_wilk(std::shared_ptr<single_container<DataType>> data, significance alfa) :
 			data_logic<single_container<DataType>>(data),
 			significance_logic<CalcType>(alfa),
@@ -157,10 +264,16 @@ class shapiro_wilk :
 				"Wrong data for Shapiro-Wilk test."
 			);
 		}
+
+		//! Funkcja statyczna wywołująca test dla podanych danych.
 		static bool evaluate(single_container<DataType>& data, significance alfa);
+
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
+
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		bool operator()();
-	private:
-		
 };
 
 template<Interval DataType, Ratio CalcType>
@@ -184,6 +297,16 @@ bool shapiro_wilk<DataType, CalcType>::operator()()
 	return this->last_result_;
 }
 
+/**
+	\brief Klasa implementująca test dla istotności średniej.
+
+	Argumenty szablonowe:
+	- _DataType_: typ danych, z których liczony jest test,
+	- _CalcType_: typ zmiennoprzecinkowy, na którym wykonywane są obliczenia.
+
+	Test zwraca _true_, jeżeli podana średnia i średnia podanych danych są istotnie statystycznie równe sobie (prawdziwe jest \f$H_0\f$),
+	_false_, jeżeli są różne (należy odrzucić \f$H_0\f$).
+*/
 template<Interval DataType, Ratio CalcType = double>
 class mean_significance_test :
 	public data_logic<single_container<DataType>>,
@@ -191,6 +314,15 @@ class mean_significance_test :
 	public algorhithm<bool>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane oraz poziomem istotności typu sl:significance oraz średnią.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::Significance,
+			- sl::SingleContainerLogic,
+			- sl::Algorithm.
+		*/
 		mean_significance_test(
 			std::shared_ptr<single_container<DataType>> data,
 			significance alfa,
@@ -217,11 +349,26 @@ class mean_significance_test :
 				"No implementation of algothithm."
 			);
 		}
+
+		//! Setter średniej używanej w teście.
 		void set_mean(CalcType mean) { mean_ = mean; }
+
+		//! Getter średniej używanej w teście.
 		CalcType get_mean() { return mean_; }
+
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
+
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		bool operator()();
+
+		//! Funkcja statyczna wywołująca test dla podanych danych.
 		static bool evaluate(single_container<DataType>& data, CalcType _mean, significance alfa);
+
 	private:
+
+		//! wariancja sprawdzana w teście.
 		CalcType mean_;
 };
 
@@ -246,6 +393,16 @@ bool mean_significance_test<DataType, CalcType>::operator()()
 	return this->last_result_;
 }
 
+/**
+	\brief Klasa implementująca test dla istotności wariancji.
+
+	Argumenty szablonowe:
+	- _DataType_: typ danych, z których liczony jest test,
+	- _CalcType_: typ zmiennoprzecinkowy, na którym wykonywane są obliczenia.
+
+	Test zwraca _true_, jeżeli podana wariancja i wariancja podanych danych są istotnie statystycznie równe sobie (prawdziwe jest \f$H_0\f$),
+	_false_, jeżeli są różne (należy odrzucić \f$H_0\f$).
+*/
 template<Interval DataType, Ratio CalcType = double>
 class variance_significance_test :
 	public data_logic<single_container<DataType>>,
@@ -253,6 +410,15 @@ class variance_significance_test :
 	public algorhithm<bool>
 {
 	public:
+
+		/**
+			\brief Konstruktor z argumentem wskaźnikowym na dane oraz poziomem istotności typu sl:significance oraz wariancją.
+			\note W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:
+			- sl::Funktor,
+			- sl::Significance,
+			- sl::SingleContainerLogic,
+			- sl::Algorithm.
+		*/
 		variance_significance_test(
 			std::shared_ptr<single_container<DataType>> data,
 			significance alfa,
@@ -279,11 +445,26 @@ class variance_significance_test :
 				"No implementation of algothithm."
 			);
 		}
+
+		//! Setter wariancji używanej w teście.
 		void set_variance(CalcType variance) { variance_ = variance; }
+
+		//! Setter wariancji używanej w teście.
 		CalcType get_variance() { return variance_; }
+
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
+
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		bool operator()();
+
+		//! Funkcja statyczna wywołująca test dla podanych danych.
 		static bool evaluate(single_container<DataType>& data, CalcType _variance, significance alfa);
+
 	private:
+
+		//! wariancja sprawdzana w teście.
 		CalcType variance_;
 };
 
