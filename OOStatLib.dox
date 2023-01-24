@@ -1,0 +1,50 @@
+/**
+\mainpage OOStatLib - Biblioteka narzędzi i testów statystycznych
+
+OOStatLib to generyczna biblioteka do języka C++ w standardzie ISO C++20 pozwalająca programiście na używanie gotowych algorytmów z dziedziny statystyki w sposób
+jak najbardziej dopasowany do środowiska, którym posługuje się użytkownik.
+Programista może używać testów, jako funkcje statyczne np.
+
+```c++
+	bool wynik_sw = sl::shapiro_wilk<double, double>::evaluate(dane, poziom_istotnosci);
+```
+
+Jak i również używać algorytmów w sposób zorientowany obiektowo i wtedy mieć możliwość zapisania ostatnio obliczonego wyniku.
+
+```c++
+	sl::shapiro_wilk<double, double> sw(dane, poziom_istotnosci);
+	sw();
+	bool wynik_sw = sw.get_last_result();
+```
+
+W wersji 0.1 biblioteki zostały zaimplementowane proste testy statystyczne:
+- test Shapiro-Wilka,
+- test dla par obserwacji,
+- test istotności dla średniej,
+- test istotności dla wariancji.
+
+Zostały również zaimplementowane proste algorytmy pomocnicze:
+- średnia,
+- wariancja,
+- odchylenie standardowe.
+
+Wszystkie testy ustalają poziom istotności za pomocą typu sl::significance - typu wyliczeniowego, który zawiera w sobie
+wszystkie popularne wartości poziomu istotności:
+- 0,01;
+- 0,02;
+- 0,05;
+- 0,1;
+
+Typy zmiennych są zaimplementowane jako koncepty z C++20. Narzędzia z biblioteki standardowej używane jako zależności w bibliotece to:
+- type_traits,
+- concepts,
+- vector,
+- concepts,
+- cmath,
+- cassert,
+- algorithm,
+- cstddef,
+- memory.
+
+Istotną brakującą rzeczą w wersji 0.1 to brak możliwości czytania danych z pliku.
+*/
