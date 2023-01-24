@@ -45,6 +45,7 @@ Typy zmiennych są zaimplementowane jako koncepty z C++20. Narzędzia z bibliote
 - algorithm,
 - cstddef,
 - memory.
+![](img/terminator.gif)
 
 Istotną brakującą rzeczą w wersji 0.1 to brak możliwości czytania danych z pliku.
 ![](https://i.gifer.com/LY6.gif)
