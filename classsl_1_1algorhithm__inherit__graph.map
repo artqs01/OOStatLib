@@ -1,0 +1,12 @@
+<map id="sl::algorhithm&lt; ResultType &gt;" name="sl::algorhithm&lt; ResultType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="5,141,191,166"/>
+<area shape="rect" id="node2" href="$classsl_1_1mean.html" title="Klasa implementująca algorytm średniej." alt="" coords="313,5,453,45"/>
+<area shape="rect" id="node3" href="$classsl_1_1standard__deviation.html" title="Klasa implementująca algorytm odchylenia standardowego." alt="" coords="303,69,463,109"/>
+<area shape="rect" id="node4" href="$classsl_1_1variance.html" title="Klasa implementująca algorytm wariancji." alt="" coords="304,133,461,173"/>
+<area shape="rect" id="node5" href="$classsl_1_1algorhithm.html" title=" " alt="" coords="303,198,462,223"/>
+<area shape="rect" id="node6" href="$classsl_1_1algorhithm.html" title=" " alt="" coords="311,247,455,273"/>
+<area shape="rect" id="node7" href="$classsl_1_1mean__significance__test.html" title="Klasa implementująca test dla istotności średniej." alt="" coords="516,132,705,172"/>
+<area shape="rect" id="node8" href="$classsl_1_1pair__observations__test.html" title="Klasa implementująca test dla par obserwacji." alt="" coords="512,197,709,251"/>
+<area shape="rect" id="node9" href="$classsl_1_1shapiro__wilk.html" title="Klasa implementująca test Shapiro&#45;Wilka." alt="" coords="521,276,701,316"/>
+<area shape="rect" id="node10" href="$classsl_1_1variance__significance__test.html" title="Klasa implementująca test dla istotności wariancji." alt="" coords="516,340,705,380"/>
+</map>

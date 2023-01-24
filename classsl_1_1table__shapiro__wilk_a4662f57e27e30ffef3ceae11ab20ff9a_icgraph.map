@@ -1,0 +1,7 @@
+<map id="sl::table_shapiro_wilk::get_p_value" name="sl::table_shapiro_wilk::get_p_value">
+<area shape="rect" id="node1" title="Funkcja zwracająca wartość p prawdowpodobieństwa granicznego, by podważyć ." alt="" coords="429,69,575,109"/>
+<area shape="rect" id="node2" href="$classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="216,77,381,102"/>
+<area shape="rect" id="node3" href="$classsl_1_1mean__significance__test.html#a6126c0e92642cb40c4ead94647aa95fe" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="14,5,159,45"/>
+<area shape="rect" id="node4" href="$classsl_1_1variance__significance__test.html#af8503c1b7d0fa92f58939eb3dd9af986" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="5,69,168,109"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="61,134,112,159"/>
+</map>

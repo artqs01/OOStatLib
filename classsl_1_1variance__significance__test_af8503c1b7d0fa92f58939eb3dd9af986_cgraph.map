@@ -1,0 +1,9 @@
+<map id="sl::variance_significance_test::evaluate" name="sl::variance_significance_test::evaluate">
+<area shape="rect" id="node1" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="5,74,168,114"/>
+<area shape="rect" id="node2" href="$classsl_1_1pdf.html#ac10e5e0a84d8c4a9df1f02425b1aba04" title="Funkcja zwracająca rozkład ." alt="" coords="247,5,351,31"/>
+<area shape="rect" id="node3" href="$classsl_1_1variance.html#ad7fad321bf6b42b5e93368b86ceb4bc0" title="Funkcja statyczna wywołująca algorytm dla podanych danych." alt="" coords="431,56,573,81"/>
+<area shape="rect" id="node5" href="$classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="216,107,381,132"/>
+<area shape="rect" id="node7" href="$classsl_1_1significance__logic.html#a09b37478c915b7b27c33316f815b7a3d" title="Funkcja statyczna konwertująca typ sl::significance na typ zmiennoprzecinkowy." alt="" coords="229,157,369,197"/>
+<area shape="rect" id="node4" href="$classsl_1_1mean.html#ab5f31a9b8258af44da78fc51c479b801" title="Funkcja statyczna ywołująca algorytm dla podanych argumentów." alt="" coords="623,56,748,81"/>
+<area shape="rect" id="node6" href="$classsl_1_1table__shapiro__wilk.html#a4662f57e27e30ffef3ceae11ab20ff9a" title="Funkcja zwracająca wartość p prawdowpodobieństwa granicznego, by podważyć ." alt="" coords="429,106,575,146"/>
+</map>

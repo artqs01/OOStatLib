@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['algorithm_0',['Algorithm',['../conceptsl_1_1Algorithm.html',1,'sl']]],
+  ['funktor_1',['Funktor',['../conceptsl_1_1Funktor.html',1,'sl']]],
+  ['interval_2',['Interval',['../conceptsl_1_1Interval.html',1,'sl']]],
+  ['multisamplecontainerlogic_3',['MultiSampleContainerLogic',['../conceptsl_1_1MultiSampleContainerLogic.html',1,'sl']]],
+  ['nominal_4',['Nominal',['../conceptsl_1_1Nominal.html',1,'sl']]],
+  ['ordinal_5',['Ordinal',['../conceptsl_1_1Ordinal.html',1,'sl']]],
+  ['pairedcontainerlogic_6',['PairedContainerLogic',['../conceptsl_1_1PairedContainerLogic.html',1,'sl']]],
+  ['ratio_7',['Ratio',['../conceptsl_1_1Ratio.html',1,'sl']]],
+  ['set_5fdata_8',['set_data',['../classsl_1_1data__logic.html#ac15cce1eb6d60a8f16ba1befcbcd068c',1,'sl::data_logic']]],
+  ['set_5fmean_9',['set_mean',['../classsl_1_1mean__significance__test.html#a068f3b08fc1bd47b13d031f867851399',1,'sl::mean_significance_test']]],
+  ['set_5fsignificance_10',['set_significance',['../classsl_1_1significance__logic.html#a86f623358aec9ce8c3b080c2bb6671dc',1,'sl::significance_logic']]],
+  ['set_5fvariance_11',['set_variance',['../classsl_1_1variance__significance__test.html#a50d548a2b3571437987cde8fc9b5260d',1,'sl::variance_significance_test']]],
+  ['shapiro_5fwilk_12',['shapiro_wilk',['../classsl_1_1shapiro__wilk.html#ade4fd22b07ccde7fac5af257442f9386',1,'sl::shapiro_wilk::shapiro_wilk()'],['../classsl_1_1shapiro__wilk.html',1,'sl::shapiro_wilk&lt; DataType, CalcType &gt;']]],
+  ['significance_13',['significance',['../namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3',1,'sl']]],
+  ['significance_14',['Significance',['../conceptsl_1_1Significance.html',1,'sl']]],
+  ['significance_5flogic_15',['significance_logic',['../classsl_1_1significance__logic.html#aec13dba9b8d7aa4e4c202aeddd7dc4ba',1,'sl::significance_logic::significance_logic()'],['../classsl_1_1significance__logic.html',1,'sl::significance_logic&lt; AlfaType &gt;']]],
+  ['significance_5flogic_3c_20double_20_3e_16',['significance_logic&lt; double &gt;',['../classsl_1_1significance__logic.html',1,'sl']]],
+  ['single_5fcontainer_17',['single_container',['../namespacesl.html#af08361b31982b81919d204334fe3e305',1,'sl']]],
+  ['single_5fdata_5falgorhithms_2ehpp_18',['single_data_algorhithms.hpp',['../single__data__algorhithms_8hpp.html',1,'']]],
+  ['singlecontainerlogic_19',['SingleContainerLogic',['../conceptsl_1_1SingleContainerLogic.html',1,'sl']]],
+  ['sl_20',['sl',['../namespacesl.html',1,'']]],
+  ['standard_5fdeviation_21',['standard_deviation',['../classsl_1_1standard__deviation.html',1,'sl::standard_deviation&lt; DataType, CalcType &gt;'],['../classsl_1_1standard__deviation.html#ac2b937b439aad3ed4ba758355e6ba3cc',1,'sl::standard_deviation::standard_deviation()']]],
+  ['unsignedintegral_22',['UnsignedIntegral',['../conceptsl_1_1UnsignedIntegral.html',1,'sl']]]
+];

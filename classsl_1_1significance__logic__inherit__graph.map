@@ -1,0 +1,8 @@
+<map id="sl::significance_logic&lt; AlfaType &gt;" name="sl::significance_logic&lt; AlfaType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="5,149,145,189"/>
+<area shape="rect" id="node2" href="$classsl_1_1mean__significance__test.html" title="Klasa implementująca test dla istotności średniej." alt="" coords="261,5,451,45"/>
+<area shape="rect" id="node3" href="$classsl_1_1pair__observations__test.html" title="Klasa implementująca test dla par obserwacji." alt="" coords="257,70,455,125"/>
+<area shape="rect" id="node4" href="$classsl_1_1shapiro__wilk.html" title="Klasa implementująca test Shapiro&#45;Wilka." alt="" coords="266,149,446,189"/>
+<area shape="rect" id="node5" href="$classsl_1_1variance__significance__test.html" title="Klasa implementująca test dla istotności wariancji." alt="" coords="261,213,451,253"/>
+<area shape="rect" id="node6" href="$classsl_1_1significance__logic.html" title=" " alt="" coords="286,277,426,317"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="src/paired_data_algorhithms.hpp" name="src/paired_data_algorhithms.hpp">
+<area shape="rect" id="node1" title="Plik z klasami implementującymi testy statystyczne, przetwarzające kolekcję par danych sl::paired_con..." alt="" coords="305,5,514,31"/>
+<area shape="rect" id="node2" href="$data_8hpp.html" title="Plik zawierający definicje konceptów odpowiedzialnych za dane przetwarzane przez bibliotekę" alt="" coords="186,299,257,324"/>
+<area shape="rect" id="node3" title=" " alt="" coords="15,372,97,397"/>
+<area shape="rect" id="node4" title=" " alt="" coords="552,372,611,397"/>
+<area shape="rect" id="node6" href="$logic_8hpp.html" title="Plik definiujący klasy definiujące logikę wspólną dla klas testów statystycznych:" alt="" coords="43,225,117,251"/>
+<area shape="rect" id="node8" href="$single__data__algorhithms_8hpp.html" title="Plik z klasami implementującymi algorytmy i testy statystyczne." alt="" coords="316,79,503,104"/>
+<area shape="rect" id="node10" title=" " alt="" coords="384,225,443,251"/>
+<area shape="rect" id="node11" title=" " alt="" coords="487,225,553,251"/>
+<area shape="rect" id="node5" title=" " alt="" coords="184,372,259,397"/>
+<area shape="rect" id="node7" title=" " alt="" coords="94,299,162,324"/>
+<area shape="rect" id="node9" href="$distributions_8hpp.html" title="Plik definiujący klasę sl::pdf zawierającej w sobie wszystkie potrzebne dystrybuanty i funkcje gęstoś..." alt="" coords="351,152,467,177"/>
+<area shape="rect" id="node12" href="$table__values_8hpp.html" title="Plik z klasami posiadającymi wszystkie potrzebne współczynniki do testów statystycznych." alt="" coords="645,152,763,177"/>
+<area shape="rect" id="node13" title=" " alt="" coords="710,225,775,251"/>
+<area shape="rect" id="node14" title=" " alt="" coords="252,152,327,177"/>
+</map>

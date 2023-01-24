@@ -1,0 +1,14 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="5,77,191,102"/>
+<area shape="rect" id="node2" href="$classsl_1_1mean.html" title="Klasa implementująca algorytm średniej." alt="" coords="267,5,407,45"/>
+<area shape="rect" id="node3" href="$classsl_1_1standard__deviation.html" title="Klasa implementująca algorytm odchylenia standardowego." alt="" coords="257,69,417,109"/>
+<area shape="rect" id="node4" href="$classsl_1_1variance.html" title="Klasa implementująca algorytm wariancji." alt="" coords="259,133,416,173"/>
+<area shape="rect" id="node5" href="$classsl_1_1algorhithm.html" title=" " alt="" coords="26,330,170,355"/>
+<area shape="rect" id="node6" href="$classsl_1_1mean__significance__test.html" title="Klasa implementująca test dla istotności średniej." alt="" coords="243,197,432,237"/>
+<area shape="rect" id="node7" href="$classsl_1_1pair__observations__test.html" title="Klasa implementująca test dla par obserwacji." alt="" coords="239,390,436,445"/>
+<area shape="rect" id="node8" href="$classsl_1_1shapiro__wilk.html" title="Klasa implementująca test Shapiro&#45;Wilka." alt="" coords="247,261,427,301"/>
+<area shape="rect" id="node9" href="$classsl_1_1variance__significance__test.html" title="Klasa implementująca test dla istotności wariancji." alt="" coords="243,325,432,365"/>
+<area shape="rect" id="node10" href="$classsl_1_1data__logic.html" title=" " alt="" coords="19,390,177,445"/>
+<area shape="rect" id="node11" href="$classsl_1_1data__logic.html" title=" " alt="" coords="13,196,183,236"/>
+<area shape="rect" id="node12" href="$classsl_1_1significance__logic.html" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="28,263,168,303"/>
+</map>

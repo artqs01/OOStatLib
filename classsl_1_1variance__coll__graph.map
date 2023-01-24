@@ -1,0 +1,9 @@
+<map id="sl::variance&lt; DataType, CalcType &gt;" name="sl::variance&lt; DataType, CalcType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca algorytm wariancji." alt="" coords="843,99,1000,139"/>
+<area shape="rect" id="node2" href="$classsl_1_1data__logic.html" title=" " alt="" coords="615,69,786,109"/>
+<area shape="rect" id="node3" href="$classstd_1_1shared__ptr_3_01single__container_3_01DataType_01_4_01_4.html" title=" " alt="" coords="280,5,451,45"/>
+<area shape="rect" id="node4" href="$classsl_1_1data__logic.html" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="283,69,448,109"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,77,196,102"/>
+<area shape="rect" id="node6" href="$classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="608,134,793,159"/>
+<area shape="rect" id="node7" title=" " alt="" coords="322,134,409,159"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,56,180"/>
+<area shape="rect" id="node2" href="$classsl_1_1pair__observations__test.html#a972fdda6a093ff4cf7ec424bb08a4349" title="Wywołuje test dla podanych argumentów." alt="" coords="117,90,257,130"/>
+<area shape="rect" id="node7" href="$classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="104,212,269,238"/>
+<area shape="rect" id="node3" href="$classsl_1_1mean.html#ab5f31a9b8258af44da78fc51c479b801" title="Funkcja statyczna ywołująca algorytm dla podanych argumentów." alt="" coords="512,98,637,123"/>
+<area shape="rect" id="node4" href="$classsl_1_1standard__deviation.html#afd3f13c2808e42e632266c1b9815b0ba" title="Funkcja statyczna wywołująca algorytm dla podanych danych." alt="" coords="317,33,464,73"/>
+<area shape="rect" id="node5" href="$classsl_1_1pdf.html#aeaf1df498b53f3c8866d99d7cd999d41" title="Funkcja zwracająca rozkład &#160;studenta." alt="" coords="357,98,424,123"/>
+<area shape="rect" id="node6" href="$classsl_1_1significance__logic.html#a09b37478c915b7b27c33316f815b7a3d" title="Funkcja statyczna konwertująca typ sl::significance na typ zmiennoprzecinkowy." alt="" coords="321,148,461,188"/>
+<area shape="rect" id="node8" href="$classsl_1_1variance.html#ad7fad321bf6b42b5e93368b86ceb4bc0" title="Funkcja statyczna wywołująca algorytm dla podanych danych." alt="" coords="319,212,462,238"/>
+<area shape="rect" id="node9" href="$classsl_1_1table__shapiro__wilk.html#a4662f57e27e30ffef3ceae11ab20ff9a" title="Funkcja zwracająca wartość p prawdowpodobieństwa granicznego, by podważyć ." alt="" coords="318,262,463,302"/>
+</map>

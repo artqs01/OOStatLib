@@ -1,0 +1,13 @@
+<map id="sl::shapiro_wilk&lt; DataType, CalcType &gt;" name="sl::shapiro_wilk&lt; DataType, CalcType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca test Shapiro&#45;Wilka." alt="" coords="877,129,1057,169"/>
+<area shape="rect" id="node2" href="$classsl_1_1data__logic.html" title=" " alt="" coords="657,65,828,105"/>
+<area shape="rect" id="node3" href="$classstd_1_1shared__ptr_3_01single__container_3_01DataType_01_4_01_4.html" title=" " alt="" coords="322,5,493,45"/>
+<area shape="rect" id="node4" href="$classsl_1_1data__logic.html" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="325,69,490,109"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,77,196,102"/>
+<area shape="rect" id="node6" href="$classsl_1_1significance__logic.html" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="673,129,813,169"/>
+<area shape="rect" id="node7" title=" " alt="" coords="362,137,453,162"/>
+<area shape="rect" id="node8" href="$classsl_1_1algorhithm.html" title=" " alt="" coords="671,194,815,219"/>
+<area shape="rect" id="node9" href="$classbool.html" title=" " alt="" coords="384,190,431,215"/>
+<area shape="rect" id="node10" href="$classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="315,239,500,265"/>
+<area shape="rect" id="node11" title=" " alt="" coords="57,239,144,265"/>
+</map>

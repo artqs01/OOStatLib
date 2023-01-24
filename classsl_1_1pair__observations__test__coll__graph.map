@@ -1,0 +1,13 @@
+<map id="sl::pair_observations_test&lt; DataType1, DataType2, CalcType &gt;" name="sl::pair_observations_test&lt; DataType1, DataType2, CalcType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca test dla par obserwacji." alt="" coords="921,139,1119,193"/>
+<area shape="rect" id="node2" href="$classsl_1_1data__logic.html" title=" " alt="" coords="713,67,872,121"/>
+<area shape="rect" id="node3" href="$classstd_1_1shared__ptr_3_01paired__container_3_01DataType1_00_01DataType2_01_4_01_4.html" title=" " alt="" coords="328,5,487,60"/>
+<area shape="rect" id="node4" href="$classsl_1_1data__logic.html" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="325,85,490,125"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,92,196,117"/>
+<area shape="rect" id="node6" href="$classsl_1_1significance__logic.html" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="723,146,863,186"/>
+<area shape="rect" id="node7" title=" " alt="" coords="362,153,453,179"/>
+<area shape="rect" id="node8" href="$classsl_1_1algorhithm.html" title=" " alt="" coords="721,211,865,236"/>
+<area shape="rect" id="node9" href="$classbool.html" title=" " alt="" coords="384,207,431,232"/>
+<area shape="rect" id="node10" href="$classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="315,256,500,281"/>
+<area shape="rect" id="node11" title=" " alt="" coords="57,256,144,281"/>
+</map>

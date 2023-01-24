@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>OOStatLib: Dokumentacja szablonu klasy sl::mean_significance_test&lt; DataType, CalcType &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">OOStatLib<span id="projectnumber">&#160;0.1</span>
+   </div>
+   <div id="projectbrief">Biblioteka narzędzi i testów statystycznych</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacesl.html">sl</a></li><li class="navelem"><a class="el" href="classsl_1_1mean__significance__test.html">mean_significance_test</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-static-methods">Statyczne metody publiczne</a> &#124;
+<a href="classsl_1_1mean__significance__test-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja szablonu klasy sl::mean_significance_test&lt; DataType, CalcType &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa implementująca test dla istotności średniej.  
+ <a href="classsl_1_1mean__significance__test.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="single__data__algorhithms_8hpp_source.html">single_data_algorhithms.hpp</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Diagram dziedziczenia dla sl::mean_significance_test&lt; DataType, CalcType &gt;</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classsl_1_1mean__significance__test__inherit__graph.png" border="0" usemap="#asl_1_1mean__significance__test_3_01DataType_00_01CalcType_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="asl_1_1mean__significance__test_3_01DataType_00_01CalcType_01_4_inherit__map" id="asl_1_1mean__significance__test_3_01DataType_00_01CalcType_01_4_inherit__map">
+<area shape="rect" title="Klasa implementująca test dla istotności średniej." alt="" coords="568,79,757,119"/>
+<area shape="rect" href="classsl_1_1data__logic.html" title=" " alt="" coords="348,15,519,55"/>
+<area shape="rect" href="classsl_1_1data__logic.html" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="15,15,181,55"/>
+<area shape="rect" href="classsl_1_1significance__logic.html" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="363,79,503,119"/>
+<area shape="rect" href="classsl_1_1algorhithm.html" title=" " alt="" coords="361,143,505,169"/>
+<area shape="rect" href="classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="5,143,191,169"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Diagram współpracy dla sl::mean_significance_test&lt; DataType, CalcType &gt;:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classsl_1_1mean__significance__test__coll__graph.png" border="0" usemap="#asl_1_1mean__significance__test_3_01DataType_00_01CalcType_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="asl_1_1mean__significance__test_3_01DataType_00_01CalcType_01_4_coll__map" id="asl_1_1mean__significance__test_3_01DataType_00_01CalcType_01_4_coll__map">
+<area shape="rect" title="Klasa implementująca test dla istotności średniej." alt="" coords="877,129,1067,169"/>
+<area shape="rect" href="classsl_1_1data__logic.html" title=" " alt="" coords="657,65,828,105"/>
+<area shape="rect" href="classstd_1_1shared__ptr_3_01single__container_3_01DataType_01_4_01_4.html" title=" " alt="" coords="322,5,493,45"/>
+<area shape="rect" href="classsl_1_1data__logic.html" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="325,69,490,109"/>
+<area shape="rect" title=" " alt="" coords="5,77,196,102"/>
+<area shape="rect" href="classsl_1_1significance__logic.html" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="673,129,813,169"/>
+<area shape="rect" title=" " alt="" coords="362,137,453,162"/>
+<area shape="rect" href="classsl_1_1algorhithm.html" title=" " alt="" coords="671,194,815,219"/>
+<area shape="rect" href="classbool.html" title=" " alt="" coords="384,190,431,215"/>
+<area shape="rect" href="classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="315,239,500,265"/>
+<area shape="rect" title=" " alt="" coords="57,239,144,265"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a2fa20011f4c2dabc93cb5d3a028c6127"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1mean__significance__test.html#a2fa20011f4c2dabc93cb5d3a028c6127">mean_significance_test</a> (std::shared_ptr&lt; <a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &gt; data, <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a> alfa, CalcType <a class="el" href="classsl_1_1mean.html">mean</a>)</td></tr>
+<tr class="memdesc:a2fa20011f4c2dabc93cb5d3a028c6127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor z argumentem wskaźnikowym na dane oraz poziomem istotności typu sl:significance oraz średnią.  <a href="classsl_1_1mean__significance__test.html#a2fa20011f4c2dabc93cb5d3a028c6127">Więcej...</a><br /></td></tr>
+<tr class="separator:a2fa20011f4c2dabc93cb5d3a028c6127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068f3b08fc1bd47b13d031f867851399"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1mean__significance__test.html#a068f3b08fc1bd47b13d031f867851399">set_mean</a> (CalcType <a class="el" href="classsl_1_1mean.html">mean</a>)</td></tr>
+<tr class="memdesc:a068f3b08fc1bd47b13d031f867851399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter średniej używanej w teście.  <a href="classsl_1_1mean__significance__test.html#a068f3b08fc1bd47b13d031f867851399">Więcej...</a><br /></td></tr>
+<tr class="separator:a068f3b08fc1bd47b13d031f867851399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9def1d44593afc67b445ddc4204c904a"><td class="memItemLeft" align="right" valign="top">CalcType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1mean__significance__test.html#a9def1d44593afc67b445ddc4204c904a">get_mean</a> ()</td></tr>
+<tr class="memdesc:a9def1d44593afc67b445ddc4204c904a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter średniej używanej w teście.  <a href="classsl_1_1mean__significance__test.html#a9def1d44593afc67b445ddc4204c904a">Więcej...</a><br /></td></tr>
+<tr class="separator:a9def1d44593afc67b445ddc4204c904a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07fdcfed35572c57a77e11263b1f210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1mean__significance__test.html#ab07fdcfed35572c57a77e11263b1f210">operator()</a> ()</td></tr>
+<tr class="memdesc:ab07fdcfed35572c57a77e11263b1f210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wywołuje test dla argumentów podanych w konstruktorze.  <a href="classsl_1_1mean__significance__test.html#ab07fdcfed35572c57a77e11263b1f210">Więcej...</a><br /></td></tr>
+<tr class="separator:ab07fdcfed35572c57a77e11263b1f210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsl_1_1data__logic"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsl_1_1data__logic')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="classsl_1_1data__logic.html">sl::data_logic&lt; single_container&lt; DataType &gt; &gt;</a></td></tr>
+<tr class="memitem:a2f32288c1bf38fe181e8645cd8f717ef inherit pub_methods_classsl_1_1data__logic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1data__logic.html#a2f32288c1bf38fe181e8645cd8f717ef">data_logic</a> (std::shared_ptr&lt; <a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &gt; data)</td></tr>
+<tr class="memdesc:a2f32288c1bf38fe181e8645cd8f717ef inherit pub_methods_classsl_1_1data__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor z argumentem wskaźnikowym na dane.  <a href="classsl_1_1data__logic.html#a2f32288c1bf38fe181e8645cd8f717ef">Więcej...</a><br /></td></tr>
+<tr class="separator:a2f32288c1bf38fe181e8645cd8f717ef inherit pub_methods_classsl_1_1data__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15cce1eb6d60a8f16ba1befcbcd068c inherit pub_methods_classsl_1_1data__logic"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1data__logic.html#ac15cce1eb6d60a8f16ba1befcbcd068c">set_data</a> (std::shared_ptr&lt; <a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &gt; data)</td></tr>
+<tr class="memdesc:ac15cce1eb6d60a8f16ba1befcbcd068c inherit pub_methods_classsl_1_1data__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter wskaźnika na dane.  <a href="classsl_1_1data__logic.html#ac15cce1eb6d60a8f16ba1befcbcd068c">Więcej...</a><br /></td></tr>
+<tr class="separator:ac15cce1eb6d60a8f16ba1befcbcd068c inherit pub_methods_classsl_1_1data__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac16c57e2ac63277fce7065d356e8d4d9 inherit pub_methods_classsl_1_1data__logic"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1data__logic.html#ac16c57e2ac63277fce7065d356e8d4d9">get_data</a> () const</td></tr>
+<tr class="memdesc:ac16c57e2ac63277fce7065d356e8d4d9 inherit pub_methods_classsl_1_1data__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter zwracający wskaźnik na dane.  <a href="classsl_1_1data__logic.html#ac16c57e2ac63277fce7065d356e8d4d9">Więcej...</a><br /></td></tr>
+<tr class="separator:ac16c57e2ac63277fce7065d356e8d4d9 inherit pub_methods_classsl_1_1data__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsl_1_1significance__logic"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsl_1_1significance__logic')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="classsl_1_1significance__logic.html">sl::significance_logic&lt; AlfaType &gt;</a></td></tr>
+<tr class="memitem:aec13dba9b8d7aa4e4c202aeddd7dc4ba inherit pub_methods_classsl_1_1significance__logic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1significance__logic.html#aec13dba9b8d7aa4e4c202aeddd7dc4ba">significance_logic</a> (<a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a> alfa)</td></tr>
+<tr class="memdesc:aec13dba9b8d7aa4e4c202aeddd7dc4ba inherit pub_methods_classsl_1_1significance__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor z argumentem typu <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3" title="Enum definiujące cztery typowe poziomy istotności występujące w statystyce:">sl::significance</a>.  <a href="classsl_1_1significance__logic.html#aec13dba9b8d7aa4e4c202aeddd7dc4ba">Więcej...</a><br /></td></tr>
+<tr class="separator:aec13dba9b8d7aa4e4c202aeddd7dc4ba inherit pub_methods_classsl_1_1significance__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f623358aec9ce8c3b080c2bb6671dc inherit pub_methods_classsl_1_1significance__logic"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1significance__logic.html#a86f623358aec9ce8c3b080c2bb6671dc">set_significance</a> (<a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a> alfa)</td></tr>
+<tr class="memdesc:a86f623358aec9ce8c3b080c2bb6671dc inherit pub_methods_classsl_1_1significance__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter poziomu istotności.  <a href="classsl_1_1significance__logic.html#a86f623358aec9ce8c3b080c2bb6671dc">Więcej...</a><br /></td></tr>
+<tr class="separator:a86f623358aec9ce8c3b080c2bb6671dc inherit pub_methods_classsl_1_1significance__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96fa971e11652403a895e3c48e804b1 inherit pub_methods_classsl_1_1significance__logic"><td class="memItemLeft" align="right" valign="top">AlfaType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1significance__logic.html#ac96fa971e11652403a895e3c48e804b1">get_significance</a> () const</td></tr>
+<tr class="memdesc:ac96fa971e11652403a895e3c48e804b1 inherit pub_methods_classsl_1_1significance__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter zwracający wartość zmienno-przecinkową odpowiadającą poziomowi istotności.  <a href="classsl_1_1significance__logic.html#ac96fa971e11652403a895e3c48e804b1">Więcej...</a><br /></td></tr>
+<tr class="separator:ac96fa971e11652403a895e3c48e804b1 inherit pub_methods_classsl_1_1significance__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsl_1_1algorhithm"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsl_1_1algorhithm')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="classsl_1_1algorhithm.html">sl::algorhithm&lt; bool &gt;</a></td></tr>
+<tr class="memitem:a52333b3d28dcc3f183ee6b3440f38ae3 inherit pub_methods_classsl_1_1algorhithm"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1algorhithm.html#a52333b3d28dcc3f183ee6b3440f38ae3">get_last_result</a> () const</td></tr>
+<tr class="memdesc:a52333b3d28dcc3f183ee6b3440f38ae3 inherit pub_methods_classsl_1_1algorhithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter ostatnio obliczonej wartości przez algorytm.  <a href="classsl_1_1algorhithm.html#a52333b3d28dcc3f183ee6b3440f38ae3">Więcej...</a><br /></td></tr>
+<tr class="separator:a52333b3d28dcc3f183ee6b3440f38ae3 inherit pub_methods_classsl_1_1algorhithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Statyczne metody publiczne</h2></td></tr>
+<tr class="memitem:a6126c0e92642cb40c4ead94647aa95fe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1mean__significance__test.html#a6126c0e92642cb40c4ead94647aa95fe">evaluate</a> (<a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &amp;data, CalcType _mean, <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a> alfa)</td></tr>
+<tr class="memdesc:a6126c0e92642cb40c4ead94647aa95fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja statyczna wywołująca test dla podanych danych.  <a href="classsl_1_1mean__significance__test.html#a6126c0e92642cb40c4ead94647aa95fe">Więcej...</a><br /></td></tr>
+<tr class="separator:a6126c0e92642cb40c4ead94647aa95fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classsl_1_1significance__logic"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classsl_1_1significance__logic')"><img src="closed.png" alt="-"/>&#160;Statyczne metody publiczne dziedziczone z <a class="el" href="classsl_1_1significance__logic.html">sl::significance_logic&lt; AlfaType &gt;</a></td></tr>
+<tr class="memitem:a09b37478c915b7b27c33316f815b7a3d inherit pub_static_methods_classsl_1_1significance__logic"><td class="memItemLeft" align="right" valign="top">static AlfaType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1significance__logic.html#a09b37478c915b7b27c33316f815b7a3d">to_floating_point</a> (<a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a> alfa)</td></tr>
+<tr class="memdesc:a09b37478c915b7b27c33316f815b7a3d inherit pub_static_methods_classsl_1_1significance__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja statyczna konwertująca typ <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3" title="Enum definiujące cztery typowe poziomy istotności występujące w statystyce:">sl::significance</a> na typ zmiennoprzecinkowy.  <a href="classsl_1_1significance__logic.html#a09b37478c915b7b27c33316f815b7a3d">Więcej...</a><br /></td></tr>
+<tr class="separator:a09b37478c915b7b27c33316f815b7a3d inherit pub_static_methods_classsl_1_1significance__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pro_attribs_classsl_1_1data__logic"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsl_1_1data__logic')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="classsl_1_1data__logic.html">sl::data_logic&lt; single_container&lt; DataType &gt; &gt;</a></td></tr>
+<tr class="memitem:a661b26234e332412c122b13304e4be17 inherit pro_attribs_classsl_1_1data__logic"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1data__logic.html#a661b26234e332412c122b13304e4be17">data_</a></td></tr>
+<tr class="memdesc:a661b26234e332412c122b13304e4be17 inherit pro_attribs_classsl_1_1data__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na kolekcję danych typu <code>std::shared_ptr</code>.  <a href="classsl_1_1data__logic.html#a661b26234e332412c122b13304e4be17">Więcej...</a><br /></td></tr>
+<tr class="separator:a661b26234e332412c122b13304e4be17 inherit pro_attribs_classsl_1_1data__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classsl_1_1significance__logic"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsl_1_1significance__logic')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="classsl_1_1significance__logic.html">sl::significance_logic&lt; AlfaType &gt;</a></td></tr>
+<tr class="memitem:a7794c4d6bd8105706bb2ed909025717f inherit pro_attribs_classsl_1_1significance__logic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1significance__logic.html#a7794c4d6bd8105706bb2ed909025717f">alfa_</a> = <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3ab870a14800d4bb7e0934f376523cf855">significance::five_hundredths</a></td></tr>
+<tr class="memdesc:a7794c4d6bd8105706bb2ed909025717f inherit pro_attribs_classsl_1_1significance__logic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wartość poziomu istotności typ sl::significznce.  <a href="classsl_1_1significance__logic.html#a7794c4d6bd8105706bb2ed909025717f">Więcej...</a><br /></td></tr>
+<tr class="separator:a7794c4d6bd8105706bb2ed909025717f inherit pro_attribs_classsl_1_1significance__logic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classsl_1_1algorhithm"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classsl_1_1algorhithm')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="classsl_1_1algorhithm.html">sl::algorhithm&lt; bool &gt;</a></td></tr>
+<tr class="memitem:af0330514e997d7a9d58e24546e9e1029 inherit pro_attribs_classsl_1_1algorhithm"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbool.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1algorhithm.html#af0330514e997d7a9d58e24546e9e1029">last_result_</a></td></tr>
+<tr class="memdesc:af0330514e997d7a9d58e24546e9e1029 inherit pro_attribs_classsl_1_1algorhithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ostatnia wartość obliczona przez algorytm.  <a href="classsl_1_1algorhithm.html#af0330514e997d7a9d58e24546e9e1029">Więcej...</a><br /></td></tr>
+<tr class="separator:af0330514e997d7a9d58e24546e9e1029 inherit pro_attribs_classsl_1_1algorhithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;Interval DataType, Ratio CalcType = double&gt;<br />
+class sl::mean_significance_test&lt; DataType, CalcType &gt;</div><p >Klasa implementująca test dla istotności średniej. </p>
+<p >Argumenty szablonowe:</p><ul>
+<li><em>DataType</em>: typ danych, z których liczony jest test,</li>
+<li><em>CalcType</em>: typ zmiennoprzecinkowy, na którym wykonywane są obliczenia.</li>
+</ul>
+<p >Test zwraca <em>true</em>, jeżeli podana średnia i średnia podanych danych są istotnie statystycznie równe sobie (prawdziwe jest <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>), <em>false</em>, jeżeli są różne (należy odrzucić <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>). </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a2fa20011f4c2dabc93cb5d3a028c6127" name="a2fa20011f4c2dabc93cb5d3a028c6127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa20011f4c2dabc93cb5d3a028c6127">&#9670;&#160;</a></span>mean_significance_test()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;Interval DataType, Ratio CalcType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsl_1_1mean__significance__test.html">sl::mean_significance_test</a>&lt; DataType, CalcType &gt;::mean_significance_test </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a>&#160;</td>
+          <td class="paramname"><em>alfa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CalcType&#160;</td>
+          <td class="paramname"><em>mean</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konstruktor z argumentem wskaźnikowym na dane oraz poziomem istotności typu sl:significance oraz średnią. </p>
+<dl class="section note"><dt>Nota</dt><dd>W konstruktorze sprawdzane są na etapie kompilacji, czy spełnione są koncepty:<ul>
+<li><a class="el" href="conceptsl_1_1Funktor.html" title="Koncept definiujący sprawdzający, czy test jest funktorem.">sl::Funktor</a>,</li>
+<li><a class="el" href="conceptsl_1_1Significance.html" title="Koncept sprawdzający, czy test statystyczny dziedziczy z sl:significance_logic.">sl::Significance</a>,</li>
+<li><a class="el" href="conceptsl_1_1SingleContainerLogic.html" title="Koncept definiujący testy korzystające z zestawów danych typu sl::single_container.">sl::SingleContainerLogic</a>,</li>
+<li><a class="el" href="conceptsl_1_1Algorithm.html" title="Koncept definiujący sprawdzający, czy test jest algorytmem.">sl::Algorithm</a>. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a6126c0e92642cb40c4ead94647aa95fe" name="a6126c0e92642cb40c4ead94647aa95fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6126c0e92642cb40c4ead94647aa95fe">&#9670;&#160;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;Interval DataType, Ratio CalcType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbool.html">bool</a> <a class="el" href="classsl_1_1mean__significance__test.html">sl::mean_significance_test</a>&lt; DataType, CalcType &gt;::evaluate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#af08361b31982b81919d204334fe3e305">single_container</a>&lt; DataType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CalcType&#160;</td>
+          <td class="paramname"><em>_mean</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a>&#160;</td>
+          <td class="paramname"><em>alfa</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funkcja statyczna wywołująca test dla podanych danych. </p>
+<div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Oto graf wywołań dla tej funkcji:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="classsl_1_1mean__significance__test_a6126c0e92642cb40c4ead94647aa95fe_cgraph.png" border="0" usemap="#aclasssl_1_1mean__significance__test_a6126c0e92642cb40c4ead94647aa95fe_cgraph" alt=""/></div>
+<map name="aclasssl_1_1mean__significance__test_a6126c0e92642cb40c4ead94647aa95fe_cgraph" id="aclasssl_1_1mean__significance__test_a6126c0e92642cb40c4ead94647aa95fe_cgraph">
+<area shape="rect" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="5,54,151,94"/>
+<area shape="rect" href="classsl_1_1mean.html#ab5f31a9b8258af44da78fc51c479b801" title="Funkcja statyczna ywołująca algorytm dla podanych argumentów." alt="" coords="605,11,731,36"/>
+<area shape="rect" href="classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="199,36,364,62"/>
+<area shape="rect" href="classsl_1_1pdf.html#aeaf1df498b53f3c8866d99d7cd999d41" title="Funkcja zwracająca rozkład &#160;studenta." alt="" coords="248,86,315,111"/>
+<area shape="rect" href="classsl_1_1significance__logic.html#a09b37478c915b7b27c33316f815b7a3d" title="Funkcja statyczna konwertująca typ sl::significance na typ zmiennoprzecinkowy." alt="" coords="211,136,351,176"/>
+<area shape="rect" href="classsl_1_1variance.html#ad7fad321bf6b42b5e93368b86ceb4bc0" title="Funkcja statyczna wywołująca algorytm dla podanych danych." alt="" coords="413,36,556,62"/>
+<area shape="rect" href="classsl_1_1table__shapiro__wilk.html#a4662f57e27e30ffef3ceae11ab20ff9a" title="Funkcja zwracająca wartość p prawdowpodobieństwa granicznego, by podważyć ." alt="" coords="412,86,557,126"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9def1d44593afc67b445ddc4204c904a" name="a9def1d44593afc67b445ddc4204c904a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9def1d44593afc67b445ddc4204c904a">&#9670;&#160;</a></span>get_mean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;Interval DataType, Ratio CalcType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CalcType <a class="el" href="classsl_1_1mean__significance__test.html">sl::mean_significance_test</a>&lt; DataType, CalcType &gt;::get_mean </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter średniej używanej w teście. </p>
+
+</div>
+</div>
+<a id="ab07fdcfed35572c57a77e11263b1f210" name="ab07fdcfed35572c57a77e11263b1f210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab07fdcfed35572c57a77e11263b1f210">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;Interval DataType, Ratio CalcType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbool.html">bool</a> <a class="el" href="classsl_1_1mean__significance__test.html">sl::mean_significance_test</a>&lt; DataType, CalcType &gt;::operator()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wywołuje test dla argumentów podanych w konstruktorze. </p>
+<p >Wynik jest zapisywany do składowej <a class="el" href="classsl_1_1algorhithm.html#af0330514e997d7a9d58e24546e9e1029">last_result_</a>. </p>
+
+</div>
+</div>
+<a id="a068f3b08fc1bd47b13d031f867851399" name="a068f3b08fc1bd47b13d031f867851399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068f3b08fc1bd47b13d031f867851399">&#9670;&#160;</a></span>set_mean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;Interval DataType, Ratio CalcType = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classsl_1_1mean__significance__test.html">sl::mean_significance_test</a>&lt; DataType, CalcType &gt;::set_mean </td>
+          <td>(</td>
+          <td class="paramtype">CalcType&#160;</td>
+          <td class="paramname"><em>mean</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter średniej używanej w teście. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li>src/<a class="el" href="single__data__algorhithms_8hpp_source.html">single_data_algorhithms.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

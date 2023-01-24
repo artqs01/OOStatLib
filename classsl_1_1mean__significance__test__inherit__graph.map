@@ -1,0 +1,8 @@
+<map id="sl::mean_significance_test&lt; DataType, CalcType &gt;" name="sl::mean_significance_test&lt; DataType, CalcType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca test dla istotności średniej." alt="" coords="568,79,757,119"/>
+<area shape="rect" id="node2" href="$classsl_1_1data__logic.html" title=" " alt="" coords="348,15,519,55"/>
+<area shape="rect" id="node3" href="$classsl_1_1data__logic.html" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="15,15,181,55"/>
+<area shape="rect" id="node4" href="$classsl_1_1significance__logic.html" title="Klasa implementująca logikę związaną z poziomem istotności testu statystycznego." alt="" coords="363,79,503,119"/>
+<area shape="rect" id="node5" href="$classsl_1_1algorhithm.html" title=" " alt="" coords="361,143,505,169"/>
+<area shape="rect" id="node6" href="$classsl_1_1algorhithm.html" title="Klasa implementująca logikę pomocniczą dla algorytmów." alt="" coords="5,143,191,169"/>
+</map>

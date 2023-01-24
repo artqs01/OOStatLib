@@ -1,0 +1,7 @@
+<map id="sl::pair_observations_test::evaluate" name="sl::pair_observations_test::evaluate">
+<area shape="rect" id="node1" title="Wywołuje test dla podanych argumentów." alt="" coords="5,85,145,125"/>
+<area shape="rect" id="node2" href="$classsl_1_1mean.html#ab5f31a9b8258af44da78fc51c479b801" title="Funkcja statyczna ywołująca algorytm dla podanych argumentów." alt="" coords="204,5,329,31"/>
+<area shape="rect" id="node3" href="$classsl_1_1standard__deviation.html#afd3f13c2808e42e632266c1b9815b0ba" title="Funkcja statyczna wywołująca algorytm dla podanych danych." alt="" coords="193,55,340,95"/>
+<area shape="rect" id="node4" href="$classsl_1_1pdf.html#aeaf1df498b53f3c8866d99d7cd999d41" title="Funkcja zwracająca rozkład &#160;studenta." alt="" coords="233,120,300,145"/>
+<area shape="rect" id="node5" href="$classsl_1_1significance__logic.html#a09b37478c915b7b27c33316f815b7a3d" title="Funkcja statyczna konwertująca typ sl::significance na typ zmiennoprzecinkowy." alt="" coords="197,170,337,210"/>
+</map>

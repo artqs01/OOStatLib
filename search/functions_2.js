@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['evaluate_0',['evaluate',['../classsl_1_1pair__observations__test.html#a972fdda6a093ff4cf7ec424bb08a4349',1,'sl::pair_observations_test::evaluate()'],['../classsl_1_1mean.html#ab5f31a9b8258af44da78fc51c479b801',1,'sl::mean::evaluate()'],['../classsl_1_1variance.html#ad7fad321bf6b42b5e93368b86ceb4bc0',1,'sl::variance::evaluate()'],['../classsl_1_1standard__deviation.html#afd3f13c2808e42e632266c1b9815b0ba',1,'sl::standard_deviation::evaluate()'],['../classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d',1,'sl::shapiro_wilk::evaluate()'],['../classsl_1_1mean__significance__test.html#a6126c0e92642cb40c4ead94647aa95fe',1,'sl::mean_significance_test::evaluate()'],['../classsl_1_1variance__significance__test.html#af8503c1b7d0fa92f58939eb3dd9af986',1,'sl::variance_significance_test::evaluate()']]]
+];

@@ -1,0 +1,12 @@
+<map id="sl::data_logic&lt; CollectionType &gt;" name="sl::data_logic&lt; CollectionType &gt;">
+<area shape="rect" id="node1" title="Klasa implementująca logikę związaną z manipulacją wskaźnikiem do kolekcji danych." alt="" coords="5,299,171,339"/>
+<area shape="rect" id="node2" href="$classsl_1_1data__logic.html" title=" " alt="" coords="384,197,555,237"/>
+<area shape="rect" id="node9" href="$classsl_1_1data__logic.html" title=" " alt="" coords="390,326,549,381"/>
+<area shape="rect" id="node3" href="$classsl_1_1mean.html" title="Klasa implementująca algorytm średniej." alt="" coords="633,5,773,45"/>
+<area shape="rect" id="node4" href="$classsl_1_1mean__significance__test.html" title="Klasa implementująca test dla istotności średniej." alt="" coords="608,69,797,109"/>
+<area shape="rect" id="node5" href="$classsl_1_1shapiro__wilk.html" title="Klasa implementująca test Shapiro&#45;Wilka." alt="" coords="613,133,793,173"/>
+<area shape="rect" id="node6" href="$classsl_1_1standard__deviation.html" title="Klasa implementująca algorytm odchylenia standardowego." alt="" coords="623,197,783,237"/>
+<area shape="rect" id="node7" href="$classsl_1_1variance.html" title="Klasa implementująca algorytm wariancji." alt="" coords="624,261,781,301"/>
+<area shape="rect" id="node8" href="$classsl_1_1variance__significance__test.html" title="Klasa implementująca test dla istotności wariancji." alt="" coords="608,325,797,365"/>
+<area shape="rect" id="node10" href="$classsl_1_1pair__observations__test.html" title="Klasa implementująca test dla par obserwacji." alt="" coords="604,390,801,445"/>
+</map>
