@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -193,7 +200,7 @@ class sl::variance_significance_test&lt; DataType, CalcType &gt;</div><p >Klasa 
 <li><em>DataType</em>: typ danych, z których liczony jest test,</li>
 <li><em>CalcType</em>: typ zmiennoprzecinkowy, na którym wykonywane są obliczenia.</li>
 </ul>
-<p >Test zwraca <em>true</em>, jeżeli podana wariancja i wariancja podanych danych są istotnie statystycznie równe sobie (prawdziwe jest <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>), <em>false</em>, jeżeli są różne (należy odrzucić <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>). </p>
+<p >Test zwraca <em>true</em>, jeżeli podana wariancja i wariancja podanych danych są istotnie statystycznie równe sobie (prawdziwe jest \(H_0\)), <em>false</em>, jeżeli są różne (należy odrzucić \(H_0\)). </p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a48b438cdc8efdef81403232618e755ee" name="a48b438cdc8efdef81403232618e755ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48b438cdc8efdef81403232618e755ee">&#9670;&#160;</a></span>variance_significance_test()</h2>

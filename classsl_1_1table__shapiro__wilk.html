@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -89,18 +96,18 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Statyczne metody publiczne</h2></td></tr>
 <tr class="memitem:a4662f57e27e30ffef3ceae11ab20ff9a"><td class="memItemLeft" align="right" valign="top">static constexpr CalcType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1table__shapiro__wilk.html#a4662f57e27e30ffef3ceae11ab20ff9a">get_p_value</a> (size_t data_count, <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3">significance</a> alfa)</td></tr>
-<tr class="memdesc:a4662f57e27e30ffef3ceae11ab20ff9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca wartość <em>p</em> prawdowpodobieństwa granicznego, by podważyć <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>.  <a href="classsl_1_1table__shapiro__wilk.html#a4662f57e27e30ffef3ceae11ab20ff9a">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a4662f57e27e30ffef3ceae11ab20ff9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca wartość <em>p</em> prawdowpodobieństwa granicznego, by podważyć \(H_0\).  <a href="classsl_1_1table__shapiro__wilk.html#a4662f57e27e30ffef3ceae11ab20ff9a">Więcej...</a><br /></td></tr>
 <tr class="separator:a4662f57e27e30ffef3ceae11ab20ff9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae34bab9222a1a4054adcff082256864a"><td class="memItemLeft" align="right" valign="top">static constexpr CalcType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1table__shapiro__wilk.html#ae34bab9222a1a4054adcff082256864a">get_coefficient</a> (size_t data_count, size_t index)</td></tr>
-<tr class="memdesc:ae34bab9222a1a4054adcff082256864a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca wartość współczynnika <img class="formulaInl" alt="$a_{in}$" src="form_3_dark.png"/>.  <a href="classsl_1_1table__shapiro__wilk.html#ae34bab9222a1a4054adcff082256864a">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ae34bab9222a1a4054adcff082256864a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca wartość współczynnika \(a_{in}\).  <a href="classsl_1_1table__shapiro__wilk.html#ae34bab9222a1a4054adcff082256864a">Więcej...</a><br /></td></tr>
 <tr class="separator:ae34bab9222a1a4054adcff082256864a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;Ratio CalcType = double&gt;<br />
 class sl::table_shapiro_wilk&lt; CalcType &gt;</div><p >Klasa z wszystkimi potrzebnymi współczynnikami do testu Shapiro-Wilka: </p>
 <ul>
-<li>wartości <em>p</em> prawdowpodobieństwa granicznego, by podważyć <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>,</li>
-<li>wartości współczynników <img class="formulaInl" alt="$a_{in}$" src="form_3_dark.png"/>. </li>
+<li>wartości <em>p</em> prawdowpodobieństwa granicznego, by podważyć \(H_0\),</li>
+<li>wartości współczynników \(a_{in}\). </li>
 </ul>
 </div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
 <a id="ae34bab9222a1a4054adcff082256864a" name="ae34bab9222a1a4054adcff082256864a"></a>
@@ -139,7 +146,7 @@ template&lt;Ratio CalcType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Funkcja zwracająca wartość współczynnika <img class="formulaInl" alt="$a_{in}$" src="form_3_dark.png"/>. </p>
+<p>Funkcja zwracająca wartość współczynnika \(a_{in}\). </p>
 <p >Za argument bierze liczbę danych oraz index współczynnika. </p><dl class="section note"><dt>Nota</dt><dd>Funkcja zawiera asercję, że liczba danych jest większa od 2 i mniejsza od 50. </dd></dl>
 
 </div>
@@ -180,7 +187,7 @@ template&lt;Ratio CalcType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Funkcja zwracająca wartość <em>p</em> prawdowpodobieństwa granicznego, by podważyć <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>. </p>
+<p>Funkcja zwracająca wartość <em>p</em> prawdowpodobieństwa granicznego, by podważyć \(H_0\). </p>
 <p >Za argument bierze liczbę danych oraz prawdopodobieństwo typu <a class="el" href="namespacesl.html#a4acebdadeb75b3a8c7ee2ece936e65e3" title="Enum definiujące cztery typowe poziomy istotności występujące w statystyce:">sl::significance</a>. </p><dl class="section note"><dt>Nota</dt><dd>Funkcja zawiera asercję, że liczba danych jest większa od 2 i mniejsza od 50. </dd></dl>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Oto graf wywoływań tej funkcji:</div>

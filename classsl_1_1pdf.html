@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -89,10 +96,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Statyczne metody publiczne</h2></td></tr>
 <tr class="memitem:ac10e5e0a84d8c4a9df1f02425b1aba04"><td class="memItemLeft" align="right" valign="top">static CalcType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1pdf.html#ac10e5e0a84d8c4a9df1f02425b1aba04">chi_sqr</a> (CalcType value, size_t degrees_of_freedom)</td></tr>
-<tr class="memdesc:ac10e5e0a84d8c4a9df1f02425b1aba04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca rozkład <img class="formulaInl" alt="$χ^2$" src="form_0_dark.png"/>.  <a href="classsl_1_1pdf.html#ac10e5e0a84d8c4a9df1f02425b1aba04">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ac10e5e0a84d8c4a9df1f02425b1aba04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca rozkład \(χ^2\).  <a href="classsl_1_1pdf.html#ac10e5e0a84d8c4a9df1f02425b1aba04">Więcej...</a><br /></td></tr>
 <tr class="separator:ac10e5e0a84d8c4a9df1f02425b1aba04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaf1df498b53f3c8866d99d7cd999d41"><td class="memItemLeft" align="right" valign="top">static CalcType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsl_1_1pdf.html#aeaf1df498b53f3c8866d99d7cd999d41">t</a> (CalcType value, size_t degrees_of_freedom)</td></tr>
-<tr class="memdesc:aeaf1df498b53f3c8866d99d7cd999d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca rozkład <img class="formulaInl" alt="$T$" src="form_1_dark.png"/> studenta.  <a href="classsl_1_1pdf.html#aeaf1df498b53f3c8866d99d7cd999d41">Więcej...</a><br /></td></tr>
+<tr class="memdesc:aeaf1df498b53f3c8866d99d7cd999d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zwracająca rozkład \(T\) studenta.  <a href="classsl_1_1pdf.html#aeaf1df498b53f3c8866d99d7cd999d41">Więcej...</a><br /></td></tr>
 <tr class="separator:aeaf1df498b53f3c8866d99d7cd999d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
@@ -135,7 +142,7 @@ template&lt;Ratio CalcType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Funkcja zwracająca rozkład <img class="formulaInl" alt="$χ^2$" src="form_0_dark.png"/>. </p>
+<p>Funkcja zwracająca rozkład \(χ^2\). </p>
 <p >Argumenty:</p><ul>
 <li>wartość zmiennej losowej <em>value</em>,</li>
 <li>liczba stopni swobody <em>degrees_of_freedom</em>. <dl class="section note"><dt>Nota</dt><dd>Dla wartości <em>nan</em> oraz <em>inf</em> program jest przerywany przez asercję </dd></dl>
@@ -191,7 +198,7 @@ template&lt;Ratio CalcType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Funkcja zwracająca rozkład <img class="formulaInl" alt="$T$" src="form_1_dark.png"/> studenta. </p>
+<p>Funkcja zwracająca rozkład \(T\) studenta. </p>
 <p >Argumenty:</p><ul>
 <li>wartość zmiennej losowej <em>value</em>,</li>
 <li>liczba stopni swobody <em>degrees_of_freedom</em>. <dl class="section note"><dt>Nota</dt><dd>Dla wartości <em>nan</em> oraz <em>inf</em> program jest przerywany przez asercję </dd></dl>

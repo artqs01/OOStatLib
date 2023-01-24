@@ -12,6 +12,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -187,7 +194,7 @@ class sl::shapiro_wilk&lt; DataType, CalcType &gt;</div><p >Klasa implementując
 <li><em>DataType</em> typu <a class="el" href="conceptsl_1_1Interval.html" title="Koncept definiujący dane będące skalą interwałową (ściśle zdefiniowana różnica między zmiennymi).">sl::Interval</a>: typ danych, z których liczony jest test,</li>
 <li><em>CalcType</em> typu typu <a class="el" href="conceptsl_1_1Ratio.html" title="Koncept definiujący dane będące skalą różnicową (ściśle zdefiniowany stosunek między zmiennymi).">sl::Ratio</a>: typ zmiennoprzecinkowy, którego jest wynik i na którym wykonywane są obliczenia.</li>
 </ul>
-<p >Test zwraca <em>true</em>, jeżeli dane są rozkładu normalnego (prawdziwe jest <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>), <em>false</em>, jeżeli nie są (należy odrzucić <img class="formulaInl" alt="$H_0$" src="form_2_dark.png"/>). </p>
+<p >Test zwraca <em>true</em>, jeżeli dane są rozkładu normalnego (prawdziwe jest \(H_0\)), <em>false</em>, jeżeli nie są (należy odrzucić \(H_0\)). </p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="ade4fd22b07ccde7fac5af257442f9386" name="ade4fd22b07ccde7fac5af257442f9386"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade4fd22b07ccde7fac5af257442f9386">&#9670;&#160;</a></span>shapiro_wilk()</h2>
