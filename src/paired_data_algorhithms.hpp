@@ -41,7 +41,7 @@ class pair_observations_test :
 			- sl::Funktor,
 			- sl::Significance,
 			- sl::PairedContainerLogic,
-			- sl::Algorhithm.
+			- sl::Algorithm.
 		*/
 		pair_observations_test(
 			std::shared_ptr<paired_container<DataType1, DataType2>> data,
@@ -70,10 +70,14 @@ class pair_observations_test :
 			);
 		}
 
+		/**
+			\brief Wywołuje test dla argumentów podanych w konstruktorze.
 
+			Wynik jest zapisywany do składowej \ref last_result_.
+		*/
 		bool operator()();
 
-
+		//! Wywołuje test dla podanych argumentów.
 		static bool evaluate(paired_container<DataType1, DataType2>& data, significance alfa);
 };
 
