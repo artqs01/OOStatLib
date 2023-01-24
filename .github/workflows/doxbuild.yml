@@ -1,0 +1,32 @@
+name: doxbuild
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '10 21 * * 6'
+
+jobs:
+  docs-build:
+    name: "Build & deploy docs"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout (with submodules)
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: Run Doxygen
+      uses: mattnotmitt/doxygen-action@v1
+      with:
+        working-directory: '.'
+        doxyfile-path: 'doxygen.conf'
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        destination_dir: '.'
+        publish_dir: docs/html
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
