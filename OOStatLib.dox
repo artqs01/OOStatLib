@@ -5,13 +5,13 @@ OOStatLib to generyczna biblioteka do języka C++ w standardzie ISO C++20 pozwal
 jak najbardziej dopasowany do środowiska, którym posługuje się użytkownik.
 Programista może używać testów, jako funkcje statyczne np.
 
-```c++
+```
 	bool wynik_sw = sl::shapiro_wilk<double, double>::evaluate(dane, poziom_istotnosci);
 ```
 
 Jak i również używać algorytmów w sposób zorientowany obiektowo i wtedy mieć możliwość zapisania ostatnio obliczonego wyniku.
 
-```c++
+```
 	sl::shapiro_wilk<double, double> sw(dane, poziom_istotnosci);
 	sw();
 	bool wynik_sw = sw.get_last_result();
