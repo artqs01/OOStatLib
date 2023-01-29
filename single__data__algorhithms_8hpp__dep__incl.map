@@ -1,5 +1,5 @@
 <map id="src/single_data_algorhithms.hpp" name="src/single_data_algorhithms.hpp">
-<area shape="rect" id="node1" title="Plik z klasami implementującymi algorytmy i testy statystyczne." alt="" coords="5,5,213,31"/>
-<area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="61,152,157,177"/>
-<area shape="rect" id="node3" href="$paired__data__algorhithms_8hpp.html" title="Plik z klasami implementującymi testy statystyczne, przetwarzające kolekcję par danych sl::paired_con..." alt="" coords="77,79,286,104"/>
+<area shape="rect" id="node1" title="Plik z klasami implementującymi algorytmy i testy statystyczne." alt="" coords="37,5,245,31"/>
+<area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="5,79,101,104"/>
+<area shape="rect" id="node3" href="$paired__data__algorhithms_8hpp.html" title="Plik z klasami implementującymi testy statystyczne, przetwarzające kolekcję par danych sl::paired_con..." alt="" coords="126,79,335,104"/>
 </map>

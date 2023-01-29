@@ -1,7 +1,6 @@
 <map id="sl::significance_logic::to_floating_point" name="sl::significance_logic::to_floating_point">
-<area shape="rect" id="node1" title="Funkcja statyczna konwertująca typ sl::significance na typ zmiennoprzecinkowy." alt="" coords="315,69,455,109"/>
-<area shape="rect" id="node2" href="$classsl_1_1pair__observations__test.html#a972fdda6a093ff4cf7ec424bb08a4349" title="Wywołuje test dla podanych argumentów." alt="" coords="115,5,255,45"/>
-<area shape="rect" id="node4" href="$classsl_1_1mean__significance__test.html#a6126c0e92642cb40c4ead94647aa95fe" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="113,69,258,109"/>
-<area shape="rect" id="node5" href="$classsl_1_1variance__significance__test.html#af8503c1b7d0fa92f58939eb3dd9af986" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="104,133,267,173"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,56,38"/>
+<area shape="rect" id="node1" title="Funkcja statyczna konwertująca typ sl::significance na typ zmiennoprzecinkowy." alt="" coords="216,69,356,109"/>
+<area shape="rect" id="node2" href="$classsl_1_1pair__observations__test.html#a972fdda6a093ff4cf7ec424bb08a4349" title="Wywołuje test dla podanych argumentów." alt="" coords="17,5,157,45"/>
+<area shape="rect" id="node3" href="$classsl_1_1mean__significance__test.html#a6126c0e92642cb40c4ead94647aa95fe" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="14,69,159,109"/>
+<area shape="rect" id="node4" href="$classsl_1_1variance__significance__test.html#af8503c1b7d0fa92f58939eb3dd9af986" title="Funkcja statyczna wywołująca test dla podanych danych." alt="" coords="5,133,168,173"/>
 </map>
