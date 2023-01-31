@@ -59,6 +59,7 @@ typami argumentów i zwracania. Trzeba było również zapewnić bezpieczeństwo
 
 ## 2.1 Diagram UML OOStatLib
 
+![](./aaa)
 
 # 3. Rozwiązania implementacyjne OOStatLib
 Pełna dokumentacja jak i cała biblioteka została zahostowana na githubie i jest dostępna pod poniższymi linkami:
