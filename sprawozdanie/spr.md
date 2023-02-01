@@ -122,7 +122,7 @@ nieznacznie.
 ## 4.1 Generyczność
 Każdy test i algorytm został zrobiony w taki sposób, że podaje się do niego osobno typ danych wejściowych, oraz typ zmiennoprzecinkowy,
 na którym wykonywane są obliczenia. Pod tym względem bibliotece nic nie brakuje i jest ona złożona w sposób wystarczający oraz
-sposób, w jaki domyślane są typy są wykonywane na etapie kompilacji (szybko). Na przykładzie:
+sposób, w jaki domyślane są typy, jest szybki, gdyż wykonuje się on na etapie kompilacji. Na przykładzie:
 
 ```c++
 bool pair_observations_test<
