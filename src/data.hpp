@@ -10,7 +10,6 @@
 	\brief Plik zawierający definicje konceptów odpowiedzialnych za dane przetwarzane przez bibliotekę
 
 	oraz enum sl::significance przechowujące dostępne wartości poziomów istotności dla wszystkich testów statystycznych.
-	\author Artur Kuś
 */
 
 /**

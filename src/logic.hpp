@@ -12,7 +12,6 @@
 	- sl::data_logic odpowiedzialne za logikę do manipulacji danymi do testów i algorytmów,
 	- sl::algorhithm odpowiedzialne za logikę pomocniczą dla algorytmów.
 	Zdefiniowane są tutaj również koncepty związane z bezpiecznym używaniem ww. klas, które są egzakwowane przy implementacji finalnych testów statystycznych.
-	\author Artur Kuś
 */
 
 namespace sl {

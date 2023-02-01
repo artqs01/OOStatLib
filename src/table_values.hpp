@@ -9,7 +9,6 @@
 /**
 	\file table_values.hpp
 	\brief Plik z klasami posiadającymi wszystkie potrzebne współczynniki do testów statystycznych.
-	\author Artur Kuś
 */
 
 namespace sl

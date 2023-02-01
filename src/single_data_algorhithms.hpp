@@ -14,7 +14,6 @@
 	\brief Plik z klasami implementującymi algorytmy i testy statystyczne 
 	
 	przetwarzające kolekcję pojedynczych danych sl::single_container.
-	\author Artur Kuś
 */
 
 namespace sl

@@ -13,7 +13,6 @@
 	\file paired_data_algorhithms.hpp
 	\brief Plik z klasami implementującymi testy statystyczne, przetwarzające kolekcję par danych sl::paired_container:
 	- sl::pair_observations_test implementujące test dla par obserwacji.
-	\author Artur Kuś
 */
 
 namespace sl 

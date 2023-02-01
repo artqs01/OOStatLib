@@ -11,8 +11,7 @@
 	\brief Plik definiujący klasę sl::pdf zawierającej w sobie wszystkie potrzebne dystrybuanty
 	i funkcje gęstości prawdopodobieństwa oraz implementacje funkcji:
 	- \f$χ^2\f$,
-	- T studenta. 
-	\author Artur Kuś
+	- T studenta.
 */
 namespace sl 
 {
