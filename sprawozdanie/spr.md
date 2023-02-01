@@ -91,7 +91,6 @@ wszystkie popularne wartości poziomu istotności:
 Typy zmiennych są zaimplementowane jako koncepty z C++20. Narzędzia z biblioteki standardowej używane jako zależności w bibliotece to:
 
 - type_traits,
-- concepts,
 - vector,
 - concepts,
 - cmath,
@@ -126,9 +125,15 @@ na którym wykonywane są obliczenia. Pod tym względem bibliotece nic nie braku
 sposób, w jaki domyślane są typy są wykonywane na etapie kompilacji (szybko). Na przykładzie:
 
 ```c++
-bool pair_observations_test<DataType1, DataType2, CalcType>::evaluate(paired_container<DataType1, DataType2> &data, significance alfa)
+bool pair_observations_test<
+	DataType1,
+	DataType2,
+	CalcType
+>::evaluate(paired_container<DataType1, DataType2> &data, significance alfa)
 {
-	using DifferenceType = std::conditional_t<std::is_floating_point_v<DataType1> && std::is_floating_point_v<DataType2>,
+	using DifferenceType = 
+		std::conditional_t<
+			std::is_floating_point_v<DataType1> && std::is_floating_point_v<DataType2>,
 		std::conditional_t<sizeof(DataType1) >= sizeof(DataType2),
 			DataType1,
 			DataType2
