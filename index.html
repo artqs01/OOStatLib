@@ -83,12 +83,12 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p >OOStatLib to generyczna biblioteka do języka C++ w standardzie ISO C++20 pozwalająca programiście na używanie gotowych algorytmów z dziedziny statystyki w sposób jak najbardziej dopasowany do środowiska, którym posługuje się użytkownik. Programista może używać testów, jako funkcje statyczne np.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">bool</span> wynik_sw = <a class="code hl_function" href="classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d">sl::shapiro_wilk&lt;double, double&gt;::evaluate</a>(dane, poziom_istotnosci);</div>
-<div class="ttc" id="aclasssl_1_1shapiro__wilk_html_a7e7eb639c1fbda53761afcacc7e52c0d"><div class="ttname"><a href="classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d">sl::shapiro_wilk::evaluate</a></div><div class="ttdeci">static bool evaluate(single_container&lt; DataType &gt; &amp;data, significance alfa)</div><div class="ttdoc">Funkcja statyczna wywołująca test dla podanych danych.</div><div class="ttdef"><b>Definition:</b> single_data_algorhithms.hpp:280</div></div>
+<div class="ttc" id="aclasssl_1_1shapiro__wilk_html_a7e7eb639c1fbda53761afcacc7e52c0d"><div class="ttname"><a href="classsl_1_1shapiro__wilk.html#a7e7eb639c1fbda53761afcacc7e52c0d">sl::shapiro_wilk::evaluate</a></div><div class="ttdeci">static bool evaluate(single_container&lt; DataType &gt; &amp;data, significance alfa)</div><div class="ttdoc">Funkcja statyczna wywołująca test dla podanych danych.</div><div class="ttdef"><b>Definition:</b> single_data_algorhithms.hpp:279</div></div>
 </div><!-- fragment --><p >Jak i również używać algorytmów w sposób zorientowany obiektowo i wtedy mieć możliwość zapisania ostatnio obliczonego wyniku.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="classsl_1_1shapiro__wilk.html">sl::shapiro_wilk&lt;double, double&gt;</a> sw(dane, poziom_istotnosci);</div>
 <div class="line">sw();</div>
 <div class="line"><span class="keywordtype">bool</span> wynik_sw = sw.get_last_result();</div>
-<div class="ttc" id="aclasssl_1_1shapiro__wilk_html"><div class="ttname"><a href="classsl_1_1shapiro__wilk.html">sl::shapiro_wilk</a></div><div class="ttdoc">Klasa implementująca test Shapiro-Wilka.</div><div class="ttdef"><b>Definition:</b> single_data_algorhithms.hpp:234</div></div>
+<div class="ttc" id="aclasssl_1_1shapiro__wilk_html"><div class="ttname"><a href="classsl_1_1shapiro__wilk.html">sl::shapiro_wilk</a></div><div class="ttdoc">Klasa implementująca test Shapiro-Wilka.</div><div class="ttdef"><b>Definition:</b> single_data_algorhithms.hpp:233</div></div>
 </div><!-- fragment --><p >W wersji 0.1 biblioteki zostały zaimplementowane proste testy statystyczne:</p><ul>
 <li>test Shapiro-Wilka,</li>
 <li>test dla par obserwacji,</li>
