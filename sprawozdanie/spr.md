@@ -59,7 +59,7 @@ typami argumentów i zwracania. Trzeba było również zapewnić bezpieczeństwo
 
 ## 2.1 Diagram UML OOStatLib
 
-![](./aaa)
+![](./visio_diagram)
 
 # 3. Rozwiązania implementacyjne OOStatLib
 Pełna dokumentacja jak i cała biblioteka została zahostowana na githubie i jest dostępna pod poniższymi linkami:
@@ -235,10 +235,10 @@ dobrym wynikiem, aczkolwiek mogło być lepiej.
 Nie udało nam się zaimplementować wszystkiego, co sobie założyliśmy, lecz po drodze wiele się nauczyliśmy z
 dziedziny programowania generycznego, które jest trudne i czasem kontrintuicyjne, ale po spędzonym czasie z
 wszystkimi źródłami, udało nam się napisać solidną bazę, którą teraz można już tylko rozbudowywać.
-
+<!-- 
 Aktualny trend w C++, można powiedzieć, jest w kontrapunkcie do innych współczesnych języków. Gdzie np. w Języku
 Java można znaleźć takie "perełki", jak wyjątek ```java.lang.RuntimeException: Uncompilable source code```,
 to w języku C++ trend polega na pisaniu programów, których jak największa część instrukcji jest realizowana
-zanim program się wykona, na etapie kompilacji, co jest, naszym zdaniem, warte uwagi i godne pochwały.
+zanim program się wykona, na etapie kompilacji, co jest, naszym zdaniem, warte uwagi i godne pochwały. -->
 
 
